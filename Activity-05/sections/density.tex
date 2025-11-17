@@ -1,69 +1,100 @@
-\section{Cálculo de Densidades Cristalográficas}
+\section{Densidades Cristalográficas y Empaquetamiento}
 
-En cristalografía, cuantificamos la eficiencia del empaquetamiento atómico
-mediante tres tipos de densidades.
+En el análisis de estructuras cristalinas, la eficiencia del
+empaquetamiento atómico y las propiedades direccionales se
+cuantifican mediante tres métricas fundamentales de densidad,
+derivadas directamente de la geometría de la celda unitaria.
 
 \subsection{Densidad Teórica (Volumétrica)}
 
-La densidad teórica ($\rho$) es la masa por unidad de volumen de la celda
-unitaria. Es una propiedad macroscópica fundamental derivada de la
-microestructura.
+La densidad teórica ($\rho$) se define como la masa total de los
+átomos contenidos en una celda unitaria, dividida por el volumen
+de dicha celda ($V_C$). Representa la densidad ideal del material
+en un estado cristalino perfecto, conectando la microestructura
+atómica con la densidad macroscópica observable.
 
-La fórmula general es:
-$$ \rho = \frac{n \cdot A}{V_C \cdot N_A} $$
-Donde:
-\begin{itemize}
-	\item $n$: Número de átomos (o unidades fórmula) por celda unitaria.
-	\item $A$: Masa atómica (o peso fórmula) $[\unit{\gram\per\mol}]$.
-	\item $V_C$: Volumen de la celda unitaria $[\unit{\centi\metre^3}]$.
-	\item $N_A$: Número de Avogadro ($6.022 \times 10^{23}$ átomos/mol).
-\end{itemize}
+La fórmula general para la densidad teórica es:
+$$ \rho = \frac{n A}{V_C N_A} $$
+Donde $n$ es el número de átomos (o unidades fórmula) por celda
+unitaria; $A$ es la masa atómica [\si{\gram\per\mol}]; $V_C$ es
+el volumen de la celda unitaria [\si{\cubic\centi\metre}]; y $N_A$
+es el Número de Avogadro ($\approx \num{6.022e23}$ \si{átomos\per\mol}).
 
-\subsubsection{Ejemplo: Hierro $\alpha$-Fe (Estructura BCC)}
-\begin{itemize}
-	\item $n$: 2 átomos/celda (1 en el centro + 8 vértices $\times$ 1/8).
-	\item $A$: $\approx 55.845$ g/mol.
-	\item $V_C$: $a^3$. En la estructura BCC, la diagonal del cubo es $4R = \sqrt{3}a$, donde $R$ es el radio atómico. Por lo tanto, $a = \frac{4R}{\sqrt{3}}$.
-	\item El volumen es $V_C = \left(\frac{4R}{\sqrt{3}}\right)^3 = \frac{64R^3}{3\sqrt{3}}$.
-\end{itemize}
-Sustituyendo, la densidad depende fundamentalmente del radio atómico y la masa:
-$$ \rho_{BCC} = \frac{2 \cdot A}{\left(\frac{64R^3}{3\sqrt{3}}\right) \cdot N_A} = \frac{3\sqrt{3} \cdot A}{32 R^3 N_A} $$
+\subsubsection{Ejemplo: Hierro \texorpdfstring{$\alpha$-\ce{Fe}}{α-FE} (Estructura BCC)}
+Para la estructura cúbica centrada en el cuerpo (BCC) del
+Hierro-$\alpha$, el número de átomos por celda $n$ es 2 (un átomo
+central más la contribución de $1/8$ por cada uno de los 8 vértices).
+La masa atómica $A$ es $\approx \num{55.845}$ \si{\gram\per\mol}.
+En la estructura BCC, el contacto atómico ocurre a lo largo de la
+diagonal del cubo, $a\sqrt{3}$, la cual equivale a $4R$, donde $R$
+es el radio atómico. De esta relación, se despeja el parámetro
+de red $a = 4R/\sqrt{3}$. El volumen $V_C = a^3$ resulta entonces
+en $\left(4R/\sqrt{3}\right)^3 = 64R^3/(3\sqrt{3})$.
+Sustituyendo $n$ y $V_C$ en la ecuación de densidad:
+$$ \rho_{\text{BCC}} = \frac{2 A}{\left(\frac{64R^3}{3\sqrt{3}}\right) N_A}
+= \frac{6\sqrt{3} A}{64 R^3 N_A} = \frac{3\sqrt{3} A}{32 R^3 N_A} $$
 
 \subsection{Densidad Lineal (DL)}
 
-La densidad lineal (DL) mide la fracción de la longitud de una dirección cristalográfica específica que está ocupada por átomos. Es crucial para entender la deformación plástica (dislocaciones) y las propiedades de transporte.
+La densidad lineal (DL) se define como el número de átomos cuyos
+centros son interceptados por un vector de dirección
+cristalográfica, dividido por la longitud de dicho vector.
+Esta métrica es fundamental para el análisis de la deformación
+plástica, ya que las dislocaciones tienden a moverse
+preferencialmente a lo largo de direcciones de alto empaquetamiento.
 
-$$ DL = \frac{\text{Número de átomos centrados en el vector de dirección}}{\text{Longitud del vector de dirección}} $$
+$$ \text{DL} = \frac{\text{Número de átomos centrados en el vector}}
+{\text{Longitud del vector de dirección}} $$
 
 \subsubsection{Ejemplo: Estructura FCC - Dirección [110]}
-\begin{itemize}
-	\item El vector [110] va de $(0,0,0)$ a $(a,a,0)$.
-	\item Atraviesa: 1/2 átomo en $(0,0,0)$, 1 átomo completo en $(a/2, a/2, 0)$ (centro de la cara), y 1/2 átomo en $(a,a,0)$.
-	\item Total de átomos en el vector: $1/2 + 1 + 1/2 = 2$ átomos.
-	\item Longitud del vector: $L = \sqrt{a^2 + a^2 + 0^2} = a\sqrt{2}$.
-\end{itemize}
-$$ DL_{[110]} = \frac{2}{a\sqrt{2}} $$
-En FCC, la diagonal de la cara es $4R = a\sqrt{2}$. Sustituyendo:
-$$ DL_{[110]} = \frac{2}{4R} = \frac{1}{2R} $$
+Consideremos la dirección [110] en una estructura FCC. Este vector
+conecta el origen $(0,0,0)$ con el vértice $(a,a,0)$, y su
+longitud es $L = \sqrt{a^2 + a^2 + 0^2} = a\sqrt{2}$.
+El número de átomos centrados en este vector es 2. Este conteo
+proviene de la suma de contribuciones: $1/2$ átomo en el origen
+$(0,0,0)$, un átomo completo en el centro de la cara
+$(a/2, a/2, 0)$, y $1/2$ átomo en el vértice $(a,a,0)$.
+La densidad lineal para la dirección [110] es, por tanto:
+$$ \text{DL}_{[110]} = \frac{2}{a\sqrt{2}} $$
+En la estructura FCC, el contacto atómico se da en la diagonal
+de la cara, $a\sqrt{2} = 4R$. Al sustituir esta relación,
+la densidad lineal se simplifica notablemente a:
+$$ \text{DL}_{[110]} = \frac{2}{4R} = \frac{1}{2R} $$
 
 \subsection{Densidad Planar (DP)}
 
-La densidad planar (DP) mide la fracción del área de un plano cristalográfico que está ocupada por átomos. Los planos con mayor DP son los planos de deslizamiento preferenciales.
+La densidad planar (DP) se define como el número de átomos
+centrados en un plano cristalográfico, por unidad de área de
+dicho plano, restringido a los límites de la celda unitaria.
+Los planos de alta densidad planar (planos compactos) constituyen
+los sistemas de deslizamiento preferenciales para la deformación.
 
-$$ DP = \frac{\text{Número de átomos centrados en el plano (dentro de la celda)}}{\text{Área del plano (dentro de la celda)}} $$
+$$ \text{DP} = \frac{\text{Número de átomos centrados en el área planar}}
+{\text{Área del plano dentro de la celda}} $$
 
 \subsubsection{Ejemplo: Estructura FCC - Plano (111)}
-Este es el plano de empaquetamiento compacto en FCC.
-\begin{itemize}
-	\item El plano corta los ejes en $(a,0,0)$, $(0,a,0)$ y $(0,0,a)$. Forma un triángulo equilátero.
-	\item Área del plano ($A_p$): Es un triángulo de lado $L = a\sqrt{2}$ (la diagonal de una cara). $A_p = \frac{1}{2} \cdot \text{base} \cdot \text{altura} = \frac{1}{2} (a\sqrt{2}) (a\sqrt{2} \sin(60^\circ)) = \frac{a^2 \sqrt{3}}{2}$.
-	\item Átomos en el plano: 3 átomos en los vértices (cada uno compartido por 2D, contribuye 1/2? No, miremos el área 2D).
-	\item Es más simple: 3 vértices (cada uno contribuye 1/6 del área del hexágono 2D) y 3 centros de cara (cada uno contribuye 1/2). 
-	\item Aternativa más robusta: 3 átomos en los vértices (e.g., (a,0,0), (0,a,0), (0,0,a)) y 3 átomos en centros de cara (e.g., (a/2, a/2, 0), (a/2, 0, a/2), (0, a/2, a/2)).
-	\item Dentro del triángulo $A_p$: Hay 3 $\times$ (1/2 átomo en las caras) + 3 $\times$ (1/6 átomo en los vértices). (Considerando el área de un átomo como $\pi R^2$).
-	\item Método estándar: Contar átomos centrados en el plano. Vértices: 3 $\times$ 1/6 (contribución al triángulo) + Centros de cara: 3 $\times$ 1/2. Total $1/2 + 3/2 = 2$ átomos.
-\end{itemize}
-$$ DP_{(111)} = \frac{2 \text{ átomos}}{A_p} = \frac{2}{a^2 \sqrt{3} / 2} = \frac{4}{a^2 \sqrt{3}} $$
-Sustituyendo $a = 2\sqrt{2}R$ (de $a\sqrt{2}=4R$):
-$$ DP_{(111)} = \frac{4}{(2\sqrt{2}R)^2 \sqrt{3}} = \frac{4}{8R^2 \sqrt{3}} = \frac{1}{2\sqrt{3}R^2} $$
-Este es el máximo empaquetamiento 2D posible (aprox. 0.907).
+Este es el plano de empaquetamiento compacto en la estructura FCC.
+Intercepta los ejes en $(a,0,0)$, $(0,a,0)$ y $(0,0,a)$,
+formando un triángulo equilátero dentro de la celda unitaria.
+La longitud de cada lado del triángulo, $L$, corresponde a la
+diagonal de una cara: $L = a\sqrt{2}$.
+El área de esta sección planar ($A_p$) es la de un triángulo
+equilátero de lado $L$:
+$$ A_p = \frac{1}{2} L \left(L \sin\left(\frac{\tau}{6}\right) \right) $$
+$$ A_p = \frac{1}{2} \left(a\sqrt{2}\right) \left(a\sqrt{2}
+	\frac{\sqrt{3}}{2}\right)
+= \frac{a^2 \sqrt{3}}{2} $$
+El número de átomos $N_p$ centrados en esta área se determina
+sumando las contribuciones de los átomos que intercepta.
+El plano pasa por 3 átomos en los vértices del triángulo (cada
+uno contribuyendo $1/6$ al área interna) y 3 átomos en los
+centros de las caras adyacentes (cada uno contribuyendo $1/2$).
+El número total de átomos es, por tanto:
+$N_p = 3 (1/6) + 3 (1/2) = 2$ átomos.
+La densidad planar para el plano (111) resulta ser:
+$$ \text{DP}_{(111)} = \frac{N_p}{A_p} = \frac{2}{a^2 \sqrt{3} / 2}
+= \frac{4}{a^2 \sqrt{3}} $$
+Usando la relación de FCC, $a\sqrt{2} = 4R \implies a = 2\sqrt{2}R$:
+$$ \text{DP}_{(111)} = \frac{4}{(2\sqrt{2}R)^2 \sqrt{3}}
+= \frac{4}{8R^2 \sqrt{3}} = \frac{1}{2\sqrt{3}R^2} $$
+Esta configuración representa el empaquetamiento 2D más denso.

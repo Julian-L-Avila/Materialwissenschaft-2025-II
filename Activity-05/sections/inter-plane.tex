@@ -1,0 +1,47 @@
+\section{Espaciado Interplanar y la Ley de Bragg}
+
+El espaciado interplanar, denotado $d_{hkl}$, es un parámetro
+geométrico fundamental de la red cristalina. Se define como la
+distancia perpendicular que separa dos planos paralelos
+adyacentes en una familia de planos, identificados por los
+índices de Miller $(hkl)$.
+
+El cálculo de este espaciado depende intrínsecamente de la
+simetría del sistema cristalino y de sus parámetros de red.
+Para los sistemas ortogonales (cúbico, tetragonal y ortorrómbico),
+la relación general se expresa de forma más elegante en términos
+de su inverso al cuadrado:
+$$ \frac{1}{d_{hkl}^2} = \frac{h^2}{a^2} + \frac{k^2}{b^2} +
+   \frac{l^2}{c^2} $$
+De esta ecuación se derivan los casos de mayor simetría. Para un
+sistema tetragonal ($a = b \neq c$), la fórmula se simplifica;
+para un sistema cúbico ($a = b = c$), la relación colapsa a:
+$$ d_{hkl} = \frac{a}{\sqrt{h^2 + k^2 + l^2}} $$
+
+La importancia física primordial del espaciado $d_{hkl}$ radica
+en su rol central en la difracción, particularmente en la
+difracción de rayos X (XRD). El cristal en su totalidad actúa
+como una red de difracción tridimensional para la radiación incidente.
+
+La interferencia constructiva de la radiación, dispersada por
+los planos $(hkl)$, solo ocurre cuando se satisface una condición
+geométrica estricta. Esta condición es la \emph{Ley de Bragg}:
+$$ n\lambda = 2d_{hkl} \sin(\theta) $$
+Donde $n$ es un entero que representa el orden de la difracción
+(a menudo se considera $n=1$), $\lambda$ es la longitud de onda
+de los rayos X monocromáticos, y $\theta$ es el ángulo de Bragg,
+el ángulo de incidencia entre el haz y el plano cristalino.
+
+Esta ecuación es la piedra angular de la cristalografía
+experimental. Establece una relación unívoca entre el espaciado
+microscópico $d_{hkl}$, una propiedad interna del material, y el
+ángulo $\theta$, una cantidad macroscópica medible.
+
+En la práctica, un difractómetro mide la intensidad de la
+radiación en función del ángulo de barrido $2\theta$. Los picos
+de alta intensidad corresponden a los ángulos $\theta$ que
+satisfacen la Ley de Bragg. Al medir las posiciones de estos
+picos, se determina el conjunto de espaciados $\{d_{hkl}\}$
+presentes en la muestra, lo cual permite la identificación
+inequívoca de la estructura de la red de Bravais y el cálculo
+preciso de sus parámetros de red.

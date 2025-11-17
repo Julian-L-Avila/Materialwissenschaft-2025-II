@@ -1,0 +1,46 @@
+\documentclass[border=5mm]{standalone}
+\usepackage{luamplib}
+\begin{document}
+\mplibtextextlabel{enable}
+\begin{mplibcode}
+beginfig(1);
+
+  numeric u; u = 34;
+
+  path xx, yy;
+  yy = (2.7 down -- 4.2 up) scaled u;
+  xx = origin -- 10 right scaled u;
+  xx := xx shifted point 0 of yy;
+
+  path p;
+  p = ((.7, 4){dir -89} .. (1, 0) .. (2.5, -2) {right} .. (5, -1) ... (10, 0) {right}) scaled u;
+
+  path a, b, c;
+  a = (xpart point 1 of p, ypart point 0 of p) -- point 1 of p -- point 4 of p;
+  b = (0, ypart point 1 of p) -- point 1 of p -- (xpart point 1 of p, ypart point 0 of xx);
+  c = (0, ypart point 2 of p) -- point 2 of p -- (xpart point 2 of p, ypart point 0 of xx);
+
+  draw a;
+  draw b dashed evenly scaled 1/2;
+  draw c dashed evenly scaled 1/2;
+
+  draw xx;
+  draw yy;
+
+  draw p withpen pencircle scaled 3/4 withcolor (0.5,0.0,0.5);
+
+  % Added this line for the equation
+  label(btex $V(r) = 4\varepsilon \left[ \left(\frac{\sigma}{r}\right)^{12} - \left(\frac{\sigma}{r}\right)^{6} \right]$ etex, (6u, 2.5u));
+
+  label.lft("$0$", point 0 of b);
+  label.lft("$-\varepsilon$", point 0 of c);
+
+  label.bot("$\strut\sigma$", point 2 of b);
+  label.bot("$\strut r_m$", point 2 of c);
+
+  label(TEX("\textbf{Energy}") rotated 90, point 1/2 of yy shifted 24 left);
+  label("$\mathbf{r}$", point 1/2 of xx shifted 24 down);
+
+endfig;
+\end{mplibcode}
+\end{document}

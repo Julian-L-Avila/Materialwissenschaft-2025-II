@@ -1,0 +1,206 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Seidell2015}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=f284d90fdc98e69678bea764ef0876b7}{%
+           family={Seidell},
+           familyi={S\bibinitperiod},
+           given={Atherton},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f284d90fdc98e69678bea764ef0876b7}
+      \strng{fullhash}{f284d90fdc98e69678bea764ef0876b7}
+      \strng{fullhashraw}{f284d90fdc98e69678bea764ef0876b7}
+      \strng{bibnamehash}{f284d90fdc98e69678bea764ef0876b7}
+      \strng{authorbibnamehash}{f284d90fdc98e69678bea764ef0876b7}
+      \strng{authornamehash}{f284d90fdc98e69678bea764ef0876b7}
+      \strng{authorfullhash}{f284d90fdc98e69678bea764ef0876b7}
+      \strng{authorfullhashraw}{f284d90fdc98e69678bea764ef0876b7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Solubilities Of Inorganic And Metal Organic Compounds : A Compilation Of Quantitative Solubility Data From The Periodical Literature}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:93677616
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:93677616
+      \endverb
+    \endentry
+    \entry{Lozinsek2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=3d10acbdde5f2c189b680b4a5971b983}{%
+           family={Lozinšek},
+           familyi={L\bibinitperiod},
+           given={Matic},
+           giveni={M\bibinitperiod}}}%
+        {{hash=53381a97579b058bb51dec9a99a9c9fd}{%
+           family={Belak\bibnamedelima Vivod},
+           familyi={B\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Matic},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b389a491a7e28c03ebe407ddbcbd3130}{%
+           family={Dragomir},
+           familyi={D\bibinitperiod},
+           given={Mirela},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {International Union of Crystallography (IUCr)}%
+      }
+      \strng{namehash}{0d4b027d1f3d5ce558d8652c9194557d}
+      \strng{fullhash}{0d4b027d1f3d5ce558d8652c9194557d}
+      \strng{fullhashraw}{0d4b027d1f3d5ce558d8652c9194557d}
+      \strng{bibnamehash}{0d4b027d1f3d5ce558d8652c9194557d}
+      \strng{authorbibnamehash}{0d4b027d1f3d5ce558d8652c9194557d}
+      \strng{authornamehash}{0d4b027d1f3d5ce558d8652c9194557d}
+      \strng{authorfullhash}{0d4b027d1f3d5ce558d8652c9194557d}
+      \strng{authorfullhashraw}{0d4b027d1f3d5ce558d8652c9194557d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2414-3146}
+      \field{journaltitle}{IUCrData}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Crystal Structure Reinvestigation Of Silver(i) Fluoride, Agf}
+      \field{volume}{8}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1107/s2414314623000184
+      \endverb
+    \endentry
+    \entry{Sanderson1960}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=8a7dfb98973a38eff98257162e0c29bf}{%
+           family={Sanderson},
+           familyi={S\bibinitperiod},
+           given={R.T.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Reinhold Publishing Corporation}%
+      }
+      \strng{namehash}{8a7dfb98973a38eff98257162e0c29bf}
+      \strng{fullhash}{8a7dfb98973a38eff98257162e0c29bf}
+      \strng{fullhashraw}{8a7dfb98973a38eff98257162e0c29bf}
+      \strng{bibnamehash}{8a7dfb98973a38eff98257162e0c29bf}
+      \strng{authorbibnamehash}{8a7dfb98973a38eff98257162e0c29bf}
+      \strng{authornamehash}{8a7dfb98973a38eff98257162e0c29bf}
+      \strng{authorfullhash}{8a7dfb98973a38eff98257162e0c29bf}
+      \strng{authorfullhashraw}{8a7dfb98973a38eff98257162e0c29bf}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781258680626}
+      \field{series}{Reinhold physical and inorganic chemistry textbook series}
+      \field{title}{Chemical Periodicity}
+      \field{year}{1960}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://books.google.com.co/books?id=dxf06ts8cIQC
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.co/books?id=dxf06ts8cIQC
+      \endverb
+    \endentry
+    \entry{ITC2016}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b4f1594c3b535a37e89e184f02d1165c}{%
+           family={ITC},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {International Union of Crystallography}%
+      }
+      \strng{namehash}{b4f1594c3b535a37e89e184f02d1165c}
+      \strng{fullhash}{b4f1594c3b535a37e89e184f02d1165c}
+      \strng{fullhashraw}{b4f1594c3b535a37e89e184f02d1165c}
+      \strng{bibnamehash}{b4f1594c3b535a37e89e184f02d1165c}
+      \strng{authorbibnamehash}{b4f1594c3b535a37e89e184f02d1165c}
+      \strng{authornamehash}{b4f1594c3b535a37e89e184f02d1165c}
+      \strng{authorfullhash}{b4f1594c3b535a37e89e184f02d1165c}
+      \strng{authorfullhashraw}{b4f1594c3b535a37e89e184f02d1165c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780470974230}
+      \field{journaltitle}{International Tables for Crystallography}
+      \field{month}{12}
+      \field{title}{International Tables For Crystallography: Space-Group Symmetry}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1107/97809553602060000114
+      \endverb
+    \endentry
+    \entry{Ladd2012}{inbook}{}{}
+      \name{author}{2}{}{%
+        {{hash=b63b97b225c7871dbab5436d814a9a63}{%
+           family={Ladd},
+           familyi={L\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=abbae649cae18059ba724c3996a3d430}{%
+           family={Palmer},
+           familyi={P\bibinitperiod},
+           given={Rex},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{2ec7bd62360d7c34456a15a70d10988c}
+      \strng{fullhash}{2ec7bd62360d7c34456a15a70d10988c}
+      \strng{fullhashraw}{2ec7bd62360d7c34456a15a70d10988c}
+      \strng{bibnamehash}{2ec7bd62360d7c34456a15a70d10988c}
+      \strng{authorbibnamehash}{2ec7bd62360d7c34456a15a70d10988c}
+      \strng{authornamehash}{2ec7bd62360d7c34456a15a70d10988c}
+      \strng{authorfullhash}{2ec7bd62360d7c34456a15a70d10988c}
+      \strng{authorfullhashraw}{2ec7bd62360d7c34456a15a70d10988c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Structure Determination by X-ray Crystallography}
+      \field{isbn}{9781461439547}
+      \field{month}{8}
+      \field{title}{Lattices And Space-Group Theory}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{51\bibrangedash 110}
+      \range{pages}{60}
+      \verb{doi}
+      \verb 10.1007/978-1-4614-3954-7_2
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

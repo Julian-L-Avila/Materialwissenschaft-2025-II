@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Evaluación Inicial y Caracterización Física No Destructiva}{3}{0}{1}
+\beamer@sectionintoc {2}{Perfilado Químico Preliminar mediante Ensayos en Solución}{6}{0}{2}
+\beamer@sectionintoc {3}{Identificación Molecular y de Grupos Funcionales por Espectroscopia}{8}{0}{3}
+\beamer@sectionintoc {4}{Composición Elemental y Análisis Estequiométrico}{10}{0}{4}
+\beamer@sectionintoc {5}{Identificación Estructural y de Fase por Difracción de Rayos X}{12}{0}{5}

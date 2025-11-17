@@ -1,0 +1,167 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{siunitx}
+
+% Theme selection
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+% Title and author information
+\title{Metodología Sistemática para la Identificación Físico-Química de un Sólido Cristalino Desconocido}
+\author{Julian L. Avila-Martinez}
+\institute{Presentación Basada en el Informe Técnico}
+\date{\today}
+
+\begin{document}
+
+% Title frame
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Outline frame
+\begin{frame}
+  \frametitle{Tabla de Contenidos}
+  \tableofcontents
+\end{frame}
+
+% Section I: Initial Evaluation and Non-Destructive Physical Characterization
+\section{Evaluación Inicial y Caracterización Física No Destructiva}
+
+\begin{frame}
+  \frametitle{Examen Visual y Estereomicroscópico}
+  \begin{itemize}
+    \item \textbf{Principio:} Establecer la homogeneidad de la muestra, la morfología general y la posible presencia de mezclas o contaminantes.
+    \item \textbf{Procedimiento:}
+    \begin{itemize}
+        \item Documentar la muestra \textit{in situ}, anotando color, textura y olor (con precaución).
+        \item Examinar bajo un estereomicroscopio a magnificaciones crecientes (10x a 50x).
+        \item Registrar características morfológicas: hábito cristalino, distribución del tamaño de partícula y homogeneidad.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Microscopía de Luz Polarizada (PLM)}
+  \begin{itemize}
+    \item \textbf{Principio:} Una técnica potente y no destructiva que revela propiedades ópticas clave basadas en la interacción de la luz polarizada con la red atómica del cristal.
+    \item \textbf{Procedimiento:}
+    \begin{itemize}
+        \item Determinar Isotropía/Anisotropía: Los materiales isótropos aparecen oscuros, mientras que los anisótropos transmiten luz.
+        \item Evaluar la Birrefringencia: Los colores de interferencia en cristales anisótropos están relacionados con su birrefringencia.
+        \item Determinar el Índice de Refracción Relativo: Utilizando el método de la línea de Becke.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Determinación de la Densidad y Punto de Fusión}
+    \begin{block}{Determinación de la Densidad por Picnometría de Gas}
+      \begin{itemize}
+        \item \textbf{Principio:} La densidad es una propiedad física intrínseca ($\rho = m/V$). La picnometría de gas utiliza un gas inerte como el helio para determinar la densidad verdadera de un polvo.
+      \end{itemize}
+    \end{block}
+    \begin{block}{Análisis Térmico I: Determinación del Punto de Fusión}
+      \begin{itemize}
+        \item \textbf{Principio:} El punto de fusión es un potente indicador de pureza y una constante física clave para la identificación. Para una sustancia pura, esta transición ocurre en un rango de temperatura muy estrecho.
+      \end{itemize}
+    \end{block}
+\end{frame}
+
+% Section II: Preliminary Chemical Profiling through Solution-Based Assays
+\section{Perfilado Químico Preliminar mediante Ensayos en Solución}
+
+\begin{frame}
+  \frametitle{Pruebas Sistemáticas de Solubilidad}
+  \begin{itemize}
+    \item \textbf{Principio:} "Lo semejante disuelve a lo semejante". El perfil de solubilidad proporciona pistas sobre la polaridad y la presencia de grupos funcionales ionizables.
+    \item \textbf{Procedimiento (Guiado por Diagrama de Flujo):}
+    \begin{itemize}
+        \item \textbf{Prueba en Agua:} Si es soluble, el compuesto es probablemente polar o iónico. Medir el pH de la solución.
+        \item \textbf{Prueba en Disolvente No Polar (Hexano):} Si es soluble, el compuesto es de naturaleza no polar.
+        \item \textbf{Pruebas en NaOH y HCl al 5\%:} Para determinar si el compuesto es ácido o básico.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Medición de la Conductividad Eléctrica}
+    \begin{itemize}
+        \item \textbf{Principio:} Los compuestos iónicos disueltos (electrolitos) se disocian en cationes y aniones, aumentando la conductividad de la solución.
+        \item \textbf{Interpretación:} Un aumento significativo de la conductividad indica que la sustancia es un electrolito (iónico). Un cambio insignificante indica que es un no electrolito (molecular).
+    \end{itemize}
+\end{frame}
+
+% Section III: Molecular and Functional Group Identification via Spectroscopy
+\section{Identificación Molecular y de Grupos Funcionales por Espectroscopia}
+
+\begin{frame}
+  \frametitle{Espectroscopia de Infrarrojo por Transformada de Fourier (FTIR)}
+    \begin{itemize}
+        \item \textbf{Principio:} Mide la absorción de radiación infrarroja, que excita las vibraciones moleculares. El espectro sirve como una huella dactilar molecular, permitiendo la identificación de grupos funcionales.
+        \item \textbf{Regiones Clave del Espectro:}
+        \begin{itemize}
+          \item $>$ \qty{3000}{\per\centi\meter}: Estiramientos O-H, N-H, C-H.
+          \item $\approx$ \qty{1700}{\per\centi\meter}: Estiramiento C=O (carbonilo).
+          \item $>$ \qty{1500}{\per\centi\meter}: Región de la huella dactilar, única para cada molécula.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Espectroscopia Raman y UV-Visible}
+    \begin{block}{Espectroscopia Raman}
+        \begin{itemize}
+            \item \textbf{Principio:} Técnica vibracional complementaria al FTIR, basada en la dispersión inelástica de luz monocromática. Es muy sensible a enlaces simétricos y no polares.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Espectroscopia UV-Visible (UV-Vis)}
+        \begin{itemize}
+            \item \textbf{Principio:} Mide la absorción de luz UV o visible, que corresponde a la excitación de electrones. Se utiliza para detectar la presencia de cromóforos, especialmente sistemas $\pi$ conjugados.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% Section IV: Elemental Composition and Stoichiometric Analysis
+\section{Composición Elemental y Análisis Estequiométrico}
+
+\begin{frame}
+  \frametitle{Espectroscopia de Fluorescencia de Rayos X (XRF)}
+    \begin{itemize}
+        \item \textbf{Principio:} Técnica no destructiva para el análisis elemental. La muestra se irradia con rayos X, provocando la emisión de rayos X secundarios con energías características de cada elemento.
+        \item \textbf{Interpretación:} El espectro muestra picos a energías específicas, que se utilizan para identificar cualitativamente los elementos presentes (típicamente desde Na hasta U).
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Espectroscopia de Rayos X de Energía Dispersiva (EDS/EDX)}
+    \begin{itemize}
+        \item \textbf{Principio:} Opera con el mismo principio que la XRF, pero la fuente de excitación es un haz de electrones, permitiendo el análisis elemental a escala microscópica.
+        \item \textbf{Interpretación:} Los mapas elementales muestran visualmente cómo se distribuyen los diferentes elementos en la muestra, confirmando si es un compuesto homogéneo o una mezcla.
+    \end{itemize}
+\end{frame}
+
+% Section V: Definitive Structural and Phase Identification by X-Ray Diffraction
+\section{Identificación Estructural y de Fase por Difracción de Rayos X}
+
+\begin{frame}
+  \frametitle{Difracción de Rayos X de Polvos (XRPD)}
+    \begin{itemize}
+        \item \textbf{Principio:} Se basa en la interferencia constructiva de rayos X monocromáticos dispersados por la disposición periódica de los átomos en una red cristalina, descrita por la Ley de Bragg: $n\lambda = 2d\sin\theta$.
+        \item El patrón de difracción resultante es una huella dactilar definitiva de la estructura cristalina de una sustancia.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Análisis Térmico Avanzado II: Calorimetría Diferencial de Barrido (DSC)}
+    \begin{itemize}
+        \item \textbf{Principio:} Ofrece una medida cuantitativa del flujo de calor asociado con las transiciones térmicas.
+        \item El proceso de fusión aparece como un pico endotérmico, cuya área es la entalpía de fusión ($\Delta H_{fus}$).
+        \item La forma del pico puede usarse para determinar la pureza con alta precisión.
+        \item Es la herramienta principal para estudiar el polimorfismo.
+    \end{itemize}
+\end{frame}
+
+
+\end{document}

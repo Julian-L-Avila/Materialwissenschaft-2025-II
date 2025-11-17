@@ -1,0 +1,353 @@
+% ==============================================================================
+% PREAMBLE
+% ==============================================================================
+\documentclass[11pt]{scrartcl}
+
+% --- Font and Encoding ---
+\usepackage{fontspec}
+
+% --- Typographic Enhancements ---
+\usepackage{microtype} % Mejora la justificación y el espaciado
+\usepackage[spanish, bidi=basic, provide=*]{babel} % Configuración de idioma
+\usepackage{csquotes}
+
+% --- Mathematics and Science ---
+\usepackage{amsmath}    % Herramientas matemáticas principales de AMS
+\usepackage[version=4]{mhchem}     % Para fórmulas químicas como \ce{AgF}
+\usepackage{siunitx}    % Composición tipográfica profesional de unidades y números
+
+% --- Tables and Figures ---
+\usepackage{booktabs}   % Para tablas de calidad profesional (\toprule, etc.)
+\usepackage{graphicx}
+\usepackage{caption}    % Personalización de leyendas
+
+% --- Page Layout and Metadata ---
+\usepackage[a4paper, margin=1in]{geometry} % Márgenes adecuados
+\usepackage{authblk}    % Para afiliaciones de autor
+
+% --- Bibliography ---
+\usepackage[backend=biber, style=numeric-comp, sorting=none]{biblatex}
+\addbibresource{./crystal.bib}
+
+% --- Hyperlinks ---
+\usepackage[colorlinks=true,
+linkcolor=blue,
+urlcolor=blue,
+citecolor=blue]{hyperref}
+
+% ==============================================================================
+% DOCUMENT METADATA
+% ==============================================================================
+\title{Análisis Estructural del \ce{AgF}}
+\author{Julian L. Avila-Martinez}
+\affil{Programa de F\'isica \\ Universidad Distrital Francisco Jos\'e de Caldas}
+\date{\today}
+
+
+% ==============================================================================
+% BEGIN DOCUMENT
+% ==============================================================================
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+% ==============================================================================
+% ABSTRACT
+% ==============================================================================
+\begin{abstract}
+  \noindent % Sin sangría para el resumen
+  El fluoruro de plata(I) (\ce{AgF}) es un compuesto inorgánico binario que sirve como
+  ejemplo canónico para el estudio de conceptos fundamentales en la física
+  del estado sólido y la ciencia de los materiales.
+A diferencia de otros
+  monohaluros de plata, el \ce{AgF} cristaliza en la estructura de sal de
+  roca (rock salt), altamente simétrica, lo que lo convierte en un sistema ideal
+  para investigar principios cristalográficos, operaciones de simetría y
+  la naturaleza del enlace iónico.
+Este informe presenta un
+  análisis del \ce{AgF}, comenzando con una descripción
+  de su estructura cristalina y progresando hacia un examen de
+  sus simetrías subyacentes.
+La naturaleza y la fuerza del enlace
+  interatómico se cuantificarán mediante un análisis de la
+  electronegatividad y la energía de red.
+\end{abstract}
+
+% ==============================================================================
+% SECTION 1: CRYSTAL STRUCTURE
+% ==============================================================================
+\section{La Estructura Cristalográfica del \ce{AgF}}
+
+\subsection{Sistema Cristalino y el Prototipo de Sal de Roca}
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.25\linewidth]{./images/SilverI-fluoride-3D-ionic.png}
+  \caption{Estructura Cristalina del \ce{AgF} usando Ovito.}
+\label{fig:crystal}
+\end{figure}
+
+A temperatura y presión ambiente, el fluoruro de plata(I) adopta un
+sistema cristalino cúbico, cristalizando en el tipo de estructura de sal
+de roca (NaCl)~\cite{Seidell2015}.
+Esta estructura es una de las
+  disposiciones más comunes para compuestos binarios con una relación
+  estequiométrica 1:1.
+Puede ser deconstruida conceptualmente en dos
+  componentes primarios: una red (lattice) y una base.
+La red, que
+  define la disposición periódica de puntos en el espacio, es cúbica
+  centrada en las caras (FCC).
+La base, que especifica los átomos
+  asociados con cada punto de la red, consiste en dos iones: un catión
+  de plata ($\ce{Ag+}$) y un anión de fluoruro ($\ce{F-}$).
+La estructura de sal de roca se describe con mayor precisión como dos
+  subredes FCC interpenetrantes.
+Una subred está compuesta enteramente por
+  cationes $\ce{Ag+}$, y la otra está compuesta por aniones $\ce{F-}$.
+Estas
+  dos subredes están desplazadas una respecto a la otra por un vector
+  correspondiente a la mitad de la diagonal del cuerpo de la celda unitaria, tal como
+  $(a/2, a/2, a/2)$, donde $a$ es el parámetro de red.
+\subsection{Parámetros de Celda Unitaria y Posiciones Atómicas}
+Las dimensiones precisas de la celda unitaria del \ce{AgF} han sido determinadas
+con alta precisión utilizando difracción de rayos X de monocristal a
+baja temperatura.
+A \SI{100}{K}, el parámetro de red es
+$a = \SI{4.92171(14)}{\angstrom}$~\cite{Lozinsek2023}. Este valor puede
+compararse con una medición más antigua a temperatura ambiente de
+$a = \SI{4.936(1)}{\angstrom}$, lo que ilustra el fenómeno de
+contracción térmica~\cite{Lozinsek2023}.
+La disminución observada en el parámetro de red a temperaturas más
+bajas es una manifestación macroscópica directa de la anarmonicidad
+del potencial interatómico.
+En un pozo de potencial perfectamente
+  armónico (parabólico), los átomos oscilarían simétricamente alrededor
+  de su posición de equilibrio, sin resultar en ningún cambio en la
+  distancia interatómica promedio con la temperatura.
+Sin embargo, los
+  potenciales interatómicos reales son asimétricos: más pronunciados en
+  el lado compresivo y más suaves en el lado expansivo.
+A medida que
+  aumenta la energía térmica, los átomos oscilan con mayor amplitud, y
+  esta asimetría provoca que la distancia de separación promedio
+  aumente, lo que conduce a la expansión térmica.
+Los datos para
+el \ce{AgF} proporcionan un claro ejemplo experimental de este principio
+fundamental del estado sólido.
+La celda unitaria cúbica convencional del \ce{AgF} contiene cuatro
+  unidades fórmula, denotadas como $Z=4$~\cite{Lozinsek2023}.
+Esto puede
+  verificarse sumando las contribuciones iónicas dentro de la celda:
+  cada una de las dos subredes FCC interpenetrantes contiene cuatro
+  iones.
+Para una única red FCC, esto se calcula a partir de los 8
+  sitios de las esquinas (cada uno compartido por 8 celdas,
+  contribuyendo $8 \times 1/8 = 1$ ion) y los 6 sitios centrados en las
+  caras (cada uno compartido por 2 celdas, contribuyendo
+  $6 \times 1/2 = 3$ iones), para un total de 4 iones por celda.
+Dentro del marco cristalográfico estándar para el grupo espacial
+$Fm\overline{3}m$, las posiciones atómicas se definen mediante
+coordenadas de Wyckoff.
+Los iones $\ce{Ag+}$ ocupan los sitios 4a en
+  coordenadas fraccionarias (0, 0, 0) y posiciones equivalentes
+  generadas por las traslaciones de centrado FCC, mientras que los iones
+  $\ce{F-}$ ocupan los sitios 4b en (1/2, 1/2, 1/2) y sus
+  posiciones equivalentes FCC.
+\subsection{Distancias Interatómicas y Coordinación}
+La disposición geométrica de la estructura de sal de roca dicta una
+relación simple entre el parámetro de red y la distancia al vecino más
+cercano, que corresponde a la longitud del enlace \ce{Ag}-F ($r_0$).
+Esta
+distancia es exactamente la mitad del parámetro de red: $r_0 = a/2$.
+Usando
+la constante de red precisa a baja temperatura, la longitud de enlace
+calculada es:
+\[
+  r_0 = \frac{\SI{4.92171}{\angstrom}}{2} = \SI{2.460855}{\angstrom}
+\]
+Este valor calculado muestra una concordancia excepcional con la
+longitud de enlace \ce{Ag}-F medida experimentalmente de
+$\SI{2.46085(7)}{\angstrom}$ del mismo estudio a baja
+temperatura~\cite{Lozinsek2023}.
+Esta consistencia interna proporciona una
+validación poderosa para el modelo estructural de sal de roca,
+demostrando que la dimensión macroscópica de la celda unitaria está
+directa y predeciblemente vinculada a la disposición atómica
+microscópica.
+El entorno de coordinación es una característica definitoria de la
+estructura. Cada ion $\ce{Ag+}$ está rodeado por seis iones $\ce{F-}$
+vecinos más cercanos ubicados en los vértices de un octaedro regular y,
+recíprocamente, cada ion $\ce{F-}$ está coordinado octaédricamente por
+seis iones $\ce{Ag+}$~\cite{Sanderson1960}.
+Esto da como resultado una
+coordinación 6:6 para el compuesto. La distancia al segundo vecino más
+cercano, que es la separación entre iones del mismo tipo (p. ej.,
+\ce{Ag}-\ce{Ag} o \ce{F}-\ce{F}), viene dada por $a/\sqrt{2}$, que se
+calcula en aproximadamente \SI{3.480}{\angstrom} a \SI{100}{K}.
+Los parámetros cristalográficos clave para el \ce{AgF} se resumen en
+la Tabla~\ref{tab:cryst-data}.
+
+\begin{table}[htbp!]
+  \centering
+  \caption{Resumen de Datos Cristalográficos del \ce{AgF} (a \SI{100}{K}).
+Datos obtenidos de~\cite{Lozinsek2023}.}
+  \label{tab:cryst-data}
+  \begin{tabular}{@{}ll@{}}
+    \toprule
+    Propiedad                           & Valor                                 \\
+    \midrule
+    Sistema Cristalino               
+& Cúbico                                \\
+    Estructura Prototípica              & Sal de Roca (NaCl)                    \\
+    Grupo Espacial (Hermann-Mauguin)    & $Fm\overline{3}m$ 
+(No. 225)          \\
+    Parámetro de Red, $a$               & \SI{4.92171(14)}{\angstrom}           \\
+    Volumen de Celda Unitaria, $V$      & \SI{119.22(1)}{\angstrom\cubed}       \\
+    Unidades Fórmula por Celda, $Z$     & 4        
+                            \\
+    Longitud de Enlace \ce{Ag}-F, $r_0$ & \SI{2.46085(7)}{\angstrom}            \\
+    Número de Coordinación (Ag y F)     & 6 (Octaédrica)                        \\
+    
+\bottomrule
+  \end{tabular}
+\end{table}
+
+% ==============================================================================
+% SECTION 2: SYMMETRY
+% ==============================================================================
+\section{Análisis de Simetría del Cristal de \ce{AgF}}
+
+\subsection{La Red de Bravais Cúbica Centrada en las Caras}
+La estructura cristalina del \ce{AgF} se construye sobre una Red de
+Bravais Cúbica Centrada en las Caras (FCC), una de las 14 posibles
+redes de Bravais tridimensionales~\cite{ITC2016}.
+Una red de Bravais es un
+  arreglo infinito de puntos discretos donde la disposición y
+  orientación parecen idénticas desde cualquier punto del
+  arreglo~\cite{Ladd2012}.
+La elección de una red FCC se indica
+  explícitamente por la letra inicial 'F' en el símbolo del grupo
+  espacial de Hermann-Mauguin, $Fm\overline{3}m$~\cite{Ladd2012}.
+Mientras que la celda unitaria convencional de una red FCC es un cubo
+  con puntos de red en cada esquina y en el centro de cada cara, una
+  celda unitaria primitiva más fundamental, que contiene solo un punto
+  de red, también puede definirse como un romboedro.
+\subsection{Grupo Puntual y Grupo Espacial $Fm\overline{3}m$}
+La simetría completa de un cristal se describe por su grupo espacial,
+que abarca tanto la simetría traslacional de la red de Bravais como
+las operaciones del grupo puntual (rotaciones, reflexiones,
+inversiones) que dejan al menos un punto fijo~\cite{ITC2016}.
+Para
+el \ce{AgF}, el grupo espacial es $Fm\overline{3}m$ (No. 225 en las
+Tablas Internacionales de Cristalografía), que es el grupo espacial
+de mayor simetría para un sistema cúbico~\cite{Seidell2015}.
+Una deconstrucción sistemática de la notación de Hermann-Mauguin
+proporciona una descripción completa de la simetría:
+\begin{description}
+  \item[F:] Denota una red de Bravais Centrada en las Caras (Face-centered).
+\item[$m\overline{3}m$:] Este es el símbolo del grupo puntual del
+    cristal, también conocido como clase cristalina.
+Pertenece al sistema
+    cúbico y se lee como "m-barra-3-m".
+\begin{itemize}
+      \item El primer símbolo, \textbf{m}, se refiere a planos
+        especulares perpendiculares a los ejes cristalográficos
+        primarios, las direcciones $\langle 100 \rangle$ (es decir,
+        planos paralelos a las caras del cubo).
+\item El segundo símbolo, \textbf{$\overline{3}$}, indica la
+        presencia de cuatro ejes de rotoinversión de orden 3 (three-fold)
+        a lo largo de las diagonales espaciales del cubo, las
+        direcciones $\langle 111 \rangle$.
+\item El tercer símbolo, \textbf{m}, se refiere a planos
+        especulares perpendiculares a las direcciones de las diagonales
+        de las caras, las direcciones $\langle 110 \rangle$.
+\end{itemize}
+\end{description}
+El grupo puntual $m\overline{3}m$ (o $O_h$ en notación de Schönflies)
+es la clase holoédrica (de más alta simetría) del sistema cúbico y
+contiene un total de 48 operaciones de simetría distintas.
+\subsection{Elementos Principales de Simetría}
+La alta simetría del cristal de \ce{AgF} se manifiesta en una rica
+colección de elementos de simetría dentro de su celda unitaria.
+La
+estructura es centrosimétrica, lo que significa que posee un
+centro de inversión. Otros elementos de simetría clave incluyen:
+\begin{itemize}
+  \item \textbf{Ejes de Rotación:} Tres ejes de rotación de orden 4
+    (4-fold) que pasan por los centros de las caras opuestas, cuatro
+    ejes de rotación de orden 3 (3-fold) a lo largo de las diagonales
+    del cuerpo, y seis ejes de rotación de orden 2 (2-fold) que pasan
+    por los centros de las aristas opuestas.
+\item \textbf{Planos Especulares:} Nueve planos especulares en
+    total, consistentes en tres planos paralelos a las caras del cubo y
+    seis planos diagonales que bisecan los ángulos entre las caras.
+\end{itemize}
+Este grado excepcionalmente alto de simetría tiene profundas
+consecuencias para las propiedades físicas del material.
+Según el
+Principio de Neumann, los elementos de simetría de cualquier propiedad
+física de un cristal deben incluir los elementos de simetría del grupo
+puntual del cristal.
+Para un cristal cúbico perteneciente al grupo
+  puntual $m\overline{3}m$, esto requiere que todas las propiedades
+  tensoriales de segundo rango (como la conductividad eléctrica, la
+  expansión térmica y la constante dieléctrica) deban ser
+  isotrópicas.
+Esto significa que la respuesta del material es
+  independiente de la dirección. Por lo tanto, la clasificación
+  cristalográfica abstracta $Fm\overline{3}m$ conduce directamente a la
+  predicción física poderosa y comprobable de que el \ce{AgF} debe
+  exhibir un comportamiento isotrópico para estas propiedades.
+% ==============================================================================
+% SECTION 3: BONDING
+% ==============================================================================
+\section{Naturaleza y Fuerza del Enlace \ce{Ag-F}}
+
+\subsection{Electronegatividad y Carácter Iónico}
+La naturaleza del enlace químico entre la plata y el flúor puede
+evaluarse utilizando el concepto de electronegatividad, que mide la
+tendencia de un átomo a atraer electrones compartidos.
+Según la escala
+de Pauling, el flúor es el elemento más electronegativo con un valor
+de $\chi_F = 3.98$, mientras que la plata tiene un valor de
+$\chi_{Ag} = 1.93$~\cite{Sanderson1960}.
+La diferencia de electronegatividad,
+$\Delta\chi$, proporciona un indicador confiable del tipo de enlace:
+\[
+  \Delta\chi = \chi_F - \chi_{Ag} = 3.98 - 1.93 = 2.05
+\]
+Una diferencia de esta magnitud ($\Delta\chi > 2.0$) indica
+fuertemente que el enlace es predominantemente
+iónico~\cite{Sanderson1960}.
+Esto implica una transferencia significativa
+  de un electrón desde el átomo de plata menos electronegativo al átomo
+  de flúor altamente electronegativo, resultando en la formación de
+  iones estables $\ce{Ag+}$ y $\ce{F-}$ unidos por atracción
+  electrostática.
+Sin embargo, es necesaria una visión más matizada. Se ha
+observado que la mayoría de los compuestos de plata, debido a la
+polarizabilidad del catión $\ce{Ag+}$, retienen un grado de carácter
+covalente~\cite{ITC2016}.
+Por lo tanto, aunque el modelo iónico puro
+  ($\ce{Ag+}\ce{F-}$) es una aproximación altamente efectiva para
+  describir las propiedades de estado sólido del \ce{AgF}, el enlace se
+  describe con mayor precisión como un enlace covalente altamente polar.
+\subsection{Energía de Red como Medida de Cohesión}
+Para un sólido iónico, la energía cohesiva (la energía que mantiene
+unido al cristal) se cuantifica mejor mediante la energía de red
+($U_L$).
+La energía de red se define formalmente como el cambio de
+  entalpía requerido para separar un mol del compuesto iónico sólido en
+  sus iones gaseosos constituyentes a una separación infinita (p. ej.,
+$\ce{AgF(s) -> Ag+(g) + F-(g)}$).
+Una energía de red grande y positiva
+significa fuerzas electrostáticas fuertes y un cristal altamente
+estable.
+
+% ==============================================================================
+% BIBLIOGRAPHY
+% ==============================================================================
+\printbibliography
+
+\end{document}

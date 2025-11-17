@@ -1,0 +1,654 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{ashby_materials_2011}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=4de59c3184c0ba1bad5f8cfefb68f6f5}{%
+           family={Ashby},
+           familyi={A\bibinitperiod},
+           given={Michael\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Burlington, {MA}}%
+      }
+      \list{publisher}{1}{%
+        {Butterworth-Heinemann}%
+      }
+      \strng{namehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{fullhash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{fullhashraw}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{bibnamehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authorbibnamehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authornamehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authorfullhash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authorfullhashraw}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Understanding materials, their properties and behavior is fundamental to engineering design, and a key application of materials science. Written for all students of engineering, materials science and design, this book describes the procedures for material selection in mechanical design in order to ensure that the most suitable materials for a given application are identified from the full range of materials and section shapes available}
+      \field{edition}{4th ed}
+      \field{isbn}{978-1-85617-663-7}
+      \field{title}{Materials selection in mechanical design}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{ashcroft_solid_1976}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=a2b8f29a9323ac2977edd5b5e7888a84}{%
+           family={Ashcroft},
+           familyi={A\bibinitperiod},
+           given={Neil\bibnamedelima W.},
+           giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=711617251066ebdd9d8e58c101e03ed3}{%
+           family={Mermin},
+           familyi={M\bibinitperiod},
+           given={N.\bibnamedelimi David},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Fort Worth Philadelphia San Diego [etc.]}%
+      }
+      \list{publisher}{1}{%
+        {Saunders college publ}%
+      }
+      \strng{namehash}{f60683403a92a32e002be743cb4a5e4b}
+      \strng{fullhash}{f60683403a92a32e002be743cb4a5e4b}
+      \strng{fullhashraw}{f60683403a92a32e002be743cb4a5e4b}
+      \strng{bibnamehash}{f60683403a92a32e002be743cb4a5e4b}
+      \strng{authorbibnamehash}{f60683403a92a32e002be743cb4a5e4b}
+      \strng{authornamehash}{f60683403a92a32e002be743cb4a5e4b}
+      \strng{authorfullhash}{f60683403a92a32e002be743cb4a5e4b}
+      \strng{authorfullhashraw}{f60683403a92a32e002be743cb4a5e4b}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-03-083993-1}
+      \field{title}{Solid state physics}
+      \field{year}{1976}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{askeland_science_2015}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=9a1f07e18edfb1eacb3a8912fd1069d1}{%
+           family={Askeland},
+           familyi={A\bibinitperiod},
+           given={D.R.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6fa00712a2264beac7614cfc45e5d7b5}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={W.J.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{f679690a8930693f06623441ceecaaa2}
+      \strng{fullhash}{f679690a8930693f06623441ceecaaa2}
+      \strng{fullhashraw}{f679690a8930693f06623441ceecaaa2}
+      \strng{bibnamehash}{f679690a8930693f06623441ceecaaa2}
+      \strng{authorbibnamehash}{f679690a8930693f06623441ceecaaa2}
+      \strng{authornamehash}{f679690a8930693f06623441ceecaaa2}
+      \strng{authorfullhash}{f679690a8930693f06623441ceecaaa2}
+      \strng{authorfullhashraw}{f679690a8930693f06623441ceecaaa2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-305-44633-5}
+      \field{title}{The Science and Engineering of Materials, Enhanced, {SI} Edition}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://books.google.com.co/books?id=vTFBBAAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.co/books?id=vTFBBAAAQBAJ
+      \endverb
+    \endentry
+    \entry{commons_fileperiodic_2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=93d707cc77f037fd02e1c8cfa75317cf}{%
+           family={Commons},
+           familyi={C\bibinitperiod},
+           given={Wikimedia},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{93d707cc77f037fd02e1c8cfa75317cf}
+      \strng{fullhash}{93d707cc77f037fd02e1c8cfa75317cf}
+      \strng{fullhashraw}{93d707cc77f037fd02e1c8cfa75317cf}
+      \strng{bibnamehash}{93d707cc77f037fd02e1c8cfa75317cf}
+      \strng{authorbibnamehash}{93d707cc77f037fd02e1c8cfa75317cf}
+      \strng{authornamehash}{93d707cc77f037fd02e1c8cfa75317cf}
+      \strng{authorfullhash}{93d707cc77f037fd02e1c8cfa75317cf}
+      \strng{authorfullhashraw}{93d707cc77f037fd02e1c8cfa75317cf}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{File:Periodic table large.svg — Wikimedia Commons, the free media repository}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb \url{https://commons.wikimedia.org/w/index.php?title=File:Periodic_table_large.svg&oldid=1065922829}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://commons.wikimedia.org/w/index.php?title=File:Periodic_table_large.svg&oldid=1065922829%7D
+      \endverb
+    \endentry
+    \entry{dehoff_thermodynamics_2006}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2c6935a0121007b37038970febd1bdfa}{%
+           family={{DeHoff}},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton, Fla.}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{2c6935a0121007b37038970febd1bdfa}
+      \strng{fullhash}{2c6935a0121007b37038970febd1bdfa}
+      \strng{fullhashraw}{2c6935a0121007b37038970febd1bdfa}
+      \strng{bibnamehash}{2c6935a0121007b37038970febd1bdfa}
+      \strng{authorbibnamehash}{2c6935a0121007b37038970febd1bdfa}
+      \strng{authornamehash}{2c6935a0121007b37038970febd1bdfa}
+      \strng{authorfullhash}{2c6935a0121007b37038970febd1bdfa}
+      \strng{authorfullhashraw}{2c6935a0121007b37038970febd1bdfa}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2. ed}
+      \field{isbn}{978-0-8493-4065-9}
+      \field{pagetotal}{605}
+      \field{title}{Thermodynamics in materials science}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{file}
+      \verb Table of Contents PDF:/home/oel/Zotero/storage/AC4JA8NN/DeHoff - 2006 - Thermodynamics in materials science.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{dirac_principles_2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=81a54cc24a20dffceb9c538a6df77483}{%
+           family={Dirac},
+           familyi={D\bibinitperiod},
+           given={P.\bibnamedelimi A.\bibnamedelimi M.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Clarendon Press, Oxford University Press}%
+      }
+      \strng{namehash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{fullhash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{fullhashraw}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{bibnamehash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{authorbibnamehash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{authornamehash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{authorfullhash}{81a54cc24a20dffceb9c538a6df77483}
+      \strng{authorfullhashraw}{81a54cc24a20dffceb9c538a6df77483}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4. ed. (rev.), repr}
+      \field{isbn}{978-0-19-852011-5}
+      \field{number}{27}
+      \field{pagetotal}{314}
+      \field{series}{International series of monographs on physics}
+      \field{title}{The principles of quantum mechanics}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{gaskell_introduction_2008}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2612c2a198b197638a8b92998b898bdf}{%
+           family={Gaskell},
+           familyi={G\bibinitperiod},
+           given={D.R.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{CRC} Press}%
+      }
+      \strng{namehash}{2612c2a198b197638a8b92998b898bdf}
+      \strng{fullhash}{2612c2a198b197638a8b92998b898bdf}
+      \strng{fullhashraw}{2612c2a198b197638a8b92998b898bdf}
+      \strng{bibnamehash}{2612c2a198b197638a8b92998b898bdf}
+      \strng{authorbibnamehash}{2612c2a198b197638a8b92998b898bdf}
+      \strng{authornamehash}{2612c2a198b197638a8b92998b898bdf}
+      \strng{authorfullhash}{2612c2a198b197638a8b92998b898bdf}
+      \strng{authorfullhashraw}{2612c2a198b197638a8b92998b898bdf}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-203-42849-8}
+      \field{title}{Introduction to the Thermodynamics of Materials, Fifth Edition}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://books.google.com.co/books?id=3xfcBQAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.co/books?id=3xfcBQAAQBAJ
+      \endverb
+    \endentry
+    \entry{kittel_introduction_nodate}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2c6d8b1aea5118299879670708080fe1}{%
+           family={Kittel},
+           familyi={K\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hoboken, {NJ}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{fullhash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{fullhashraw}{2c6d8b1aea5118299879670708080fe1}
+      \strng{bibnamehash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{authorbibnamehash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{authornamehash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{authorfullhash}{2c6d8b1aea5118299879670708080fe1}
+      \strng{authorfullhashraw}{2c6d8b1aea5118299879670708080fe1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{8. ed., [repr.]}
+      \field{isbn}{978-0-471-41526-8}
+      \field{pagetotal}{680}
+      \field{title}{Introduction to solid state physics}
+      \true{nocite}
+    \endentry
+    \entry{marder_condensed_2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=40abafc7458f27a05e88d3a40752faad}{%
+           family={Marder},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{40abafc7458f27a05e88d3a40752faad}
+      \strng{fullhash}{40abafc7458f27a05e88d3a40752faad}
+      \strng{fullhashraw}{40abafc7458f27a05e88d3a40752faad}
+      \strng{bibnamehash}{40abafc7458f27a05e88d3a40752faad}
+      \strng{authorbibnamehash}{40abafc7458f27a05e88d3a40752faad}
+      \strng{authornamehash}{40abafc7458f27a05e88d3a40752faad}
+      \strng{authorfullhash}{40abafc7458f27a05e88d3a40752faad}
+      \strng{authorfullhashraw}{40abafc7458f27a05e88d3a40752faad}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{edition}{1}
+      \field{isbn}{978-0-470-61798-4 978-0-470-94995-5}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{title}{Condensed Matter Physics}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1002/9780470949955
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/book/10.1002/9780470949955
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/book/10.1002/9780470949955
+      \endverb
+    \endentry
+    \entry{murthy_hamiltonian_2003}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=07e02bb512816ce03ea23b3a7a4465ce}{%
+           family={Murthy},
+           familyi={M\bibinitperiod},
+           given={Ganpathy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=da264ccf69a35c1d68643cdd7b991c43}{%
+           family={Shankar},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{883052a9554cfbfea9c773a331ec48ad}
+      \strng{fullhash}{883052a9554cfbfea9c773a331ec48ad}
+      \strng{fullhashraw}{883052a9554cfbfea9c773a331ec48ad}
+      \strng{bibnamehash}{883052a9554cfbfea9c773a331ec48ad}
+      \strng{authorbibnamehash}{883052a9554cfbfea9c773a331ec48ad}
+      \strng{authornamehash}{883052a9554cfbfea9c773a331ec48ad}
+      \strng{authorfullhash}{883052a9554cfbfea9c773a331ec48ad}
+      \strng{authorfullhashraw}{883052a9554cfbfea9c773a331ec48ad}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{3}
+      \field{issn}{0034-6861, 1539-0756}
+      \field{journaltitle}{Reviews of Modern Physics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{4}
+      \field{shortjournal}{Rev. Mod. Phys.}
+      \field{title}{Hamiltonian theories of the fractional quantum Hall effect}
+      \field{volume}{75}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1101\bibrangedash 1158}
+      \range{pages}{58}
+      \verb{doi}
+      \verb 10.1103/RevModPhys.75.1101
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.75.1101
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/RevModPhys.75.1101
+      \endverb
+    \endentry
+    \entry{pauli_connection_1950}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=117b191bc93586236c1866209f3cb93d}{%
+           family={Pauli},
+           familyi={P\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{117b191bc93586236c1866209f3cb93d}
+      \strng{fullhash}{117b191bc93586236c1866209f3cb93d}
+      \strng{fullhashraw}{117b191bc93586236c1866209f3cb93d}
+      \strng{bibnamehash}{117b191bc93586236c1866209f3cb93d}
+      \strng{authorbibnamehash}{117b191bc93586236c1866209f3cb93d}
+      \strng{authornamehash}{117b191bc93586236c1866209f3cb93d}
+      \strng{authorfullhash}{117b191bc93586236c1866209f3cb93d}
+      \strng{authorfullhashraw}{117b191bc93586236c1866209f3cb93d}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0033-068X, 1347-4081}
+      \field{journaltitle}{Progress of Theoretical Physics}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{4}
+      \field{shortjournal}{Progress of Theoretical Physics}
+      \field{title}{On the Connection between Spin and Statistics}
+      \field{volume}{5}
+      \field{year}{1950}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{526\bibrangedash 543}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1143/ptp/5.4.526
+      \endverb
+      \verb{urlraw}
+      \verb https://academic.oup.com/ptp/article-lookup/doi/10.1143/ptp/5.4.526
+      \endverb
+      \verb{url}
+      \verb https://academic.oup.com/ptp/article-lookup/doi/10.1143/ptp/5.4.526
+      \endverb
+    \endentry
+    \entry{pauli_general_1980}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=092601d1e9e8519accb07c37a0611492}{%
+           family={Pauli},
+           familyi={P\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{editora}{2}{}{%
+        {{hash=b4f5d84bb461f4483e6fd8b75550e006}{%
+           family={Achuthan},
+           familyi={A\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=51eb5571f871997e5b5a9419e5164163}{%
+           family={Venkatesan},
+           familyi={V\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin / Heidelberg}%
+      }
+      \strng{namehash}{092601d1e9e8519accb07c37a0611492}
+      \strng{fullhash}{092601d1e9e8519accb07c37a0611492}
+      \strng{fullhashraw}{092601d1e9e8519accb07c37a0611492}
+      \strng{bibnamehash}{092601d1e9e8519accb07c37a0611492}
+      \strng{authorbibnamehash}{092601d1e9e8519accb07c37a0611492}
+      \strng{authornamehash}{092601d1e9e8519accb07c37a0611492}
+      \strng{authorfullhash}{092601d1e9e8519accb07c37a0611492}
+      \strng{authorfullhashraw}{092601d1e9e8519accb07c37a0611492}
+      \strng{editorabibnamehash}{e12ca454f0d72fe5d9f0e378efebb736}
+      \strng{editoranamehash}{e12ca454f0d72fe5d9f0e378efebb736}
+      \strng{editorafullhash}{e12ca454f0d72fe5d9f0e378efebb736}
+      \strng{editorafullhashraw}{e12ca454f0d72fe5d9f0e378efebb736}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{editoratype}{collaborator}
+      \field{isbn}{978-3-540-09842-3}
+      \field{title}{General Principles of Quantum Mechanics}
+      \field{year}{1980}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{rhines_phase_1956}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b3d93c9bb5fedca10c1eb876f63c782b}{%
+           family={Rhines},
+           familyi={R\bibinitperiod},
+           given={F.N.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{McGraw}-Hill}%
+      }
+      \strng{namehash}{b3d93c9bb5fedca10c1eb876f63c782b}
+      \strng{fullhash}{b3d93c9bb5fedca10c1eb876f63c782b}
+      \strng{fullhashraw}{b3d93c9bb5fedca10c1eb876f63c782b}
+      \strng{bibnamehash}{b3d93c9bb5fedca10c1eb876f63c782b}
+      \strng{authorbibnamehash}{b3d93c9bb5fedca10c1eb876f63c782b}
+      \strng{authornamehash}{b3d93c9bb5fedca10c1eb876f63c782b}
+      \strng{authorfullhash}{b3d93c9bb5fedca10c1eb876f63c782b}
+      \strng{authorfullhashraw}{b3d93c9bb5fedca10c1eb876f63c782b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-07-052070-7}
+      \field{series}{{McGraw}-Hill series in material science and engineering}
+      \field{title}{Phase Diagrams in Metallurgy: Their Development and Application}
+      \field{year}{1956}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://books.google.com.co/books?id=IJNTAAAAMAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.co/books?id=IJNTAAAAMAAJ
+      \endverb
+    \endentry
+    \entry{schwinger_theory_1951}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b980b4d50e299f1778272e6120f86baf}{%
+           family={Schwinger},
+           familyi={S\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b980b4d50e299f1778272e6120f86baf}
+      \strng{fullhash}{b980b4d50e299f1778272e6120f86baf}
+      \strng{fullhashraw}{b980b4d50e299f1778272e6120f86baf}
+      \strng{bibnamehash}{b980b4d50e299f1778272e6120f86baf}
+      \strng{authorbibnamehash}{b980b4d50e299f1778272e6120f86baf}
+      \strng{authornamehash}{b980b4d50e299f1778272e6120f86baf}
+      \strng{authorfullhash}{b980b4d50e299f1778272e6120f86baf}
+      \strng{authorfullhashraw}{b980b4d50e299f1778272e6120f86baf}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{issn}{0031-899X}
+      \field{journaltitle}{Physical Review}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Phys. Rev.}
+      \field{title}{The Theory of Quantized Fields. I}
+      \field{volume}{82}
+      \field{year}{1951}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{914\bibrangedash 927}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1103/PhysRev.82.914
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.82.914
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.82.914
+      \endverb
+    \endentry
+    \entry{shackelford_introduction_2016}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=99c6c5b1d69677dbe43f71c393323e00}{%
+           family={Shackelford},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston Munich}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{99c6c5b1d69677dbe43f71c393323e00}
+      \strng{fullhash}{99c6c5b1d69677dbe43f71c393323e00}
+      \strng{fullhashraw}{99c6c5b1d69677dbe43f71c393323e00}
+      \strng{bibnamehash}{99c6c5b1d69677dbe43f71c393323e00}
+      \strng{authorbibnamehash}{99c6c5b1d69677dbe43f71c393323e00}
+      \strng{authornamehash}{99c6c5b1d69677dbe43f71c393323e00}
+      \strng{authorfullhash}{99c6c5b1d69677dbe43f71c393323e00}
+      \strng{authorfullhashraw}{99c6c5b1d69677dbe43f71c393323e00}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{For a first course in Materials Sciences and Engineering taught in the departments of materials science, mechanical, civil and general engineering Introduction to Materials Science for Engineers provides balanced, current treatment of the full spectrum of engineering materials, covering all the physical properties, applications and relevant properties associated with engineering materials. It explores all of the major categories of materials while also offering detailed examinations of a wide range of new materials with high-tech applications. {MasteringEngineering} for Introduction to Materials Science for Engineers is a total learning package. This innovative online program emulates the instructor’s office—hour environment, guiding students through engineering concepts from Introduction to Materials Science for Engineers with self-paced individualized coaching. Teaching and Learning {ExperienceThis} program will provide a better teaching and learning experience–for you and your students. It provides:Individualized Coaching with {MasteringEngineering}: {MasteringEngineering} emulates the instructor’s office-hour environment using self-paced individualized coaching. A Balanced Approach Designed for a First Course in Engineering Materials: This concise textbook covers concepts and applications of materials science for the beginning student. Coverage of the Most Important Advances in Engineering Materials: Content is refreshed to provide the most up-to-date information for your course. In-text Features that Reinforce Concepts: An assortment of case studies, examples, practice problems, and homework problems give students plenty of opportunities to develop their understanding. Enhance Learning with Instructor Supplements: An Instructors Solution Manual and {PowerPoint} slides are available to expand on the topics presented in the text}
+      \field{isbn}{978-0-273-79340-3}
+      \field{series}{Always learning}
+      \field{title}{Introduction to materials science for engineers}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \true{nocite}
+    \endentry
+    \entry{tapia_one_2011}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=059e7d2e17519eef6e8f013d121b222a}{%
+           family={Tapia},
+           familyi={T\bibinitperiod},
+           given={Saul},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2cc2f674ccaad2bd69391c88f7f22d70}{%
+           family={Rio},
+           familyi={R\bibinitperiod},
+           given={J.\bibnamedelimi Antonio},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={del},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{1aff9cafa5e20edeaf5189b1a7c3a626}
+      \strng{fullhash}{1aff9cafa5e20edeaf5189b1a7c3a626}
+      \strng{fullhashraw}{1aff9cafa5e20edeaf5189b1a7c3a626}
+      \strng{bibnamehash}{1aff9cafa5e20edeaf5189b1a7c3a626}
+      \strng{authorbibnamehash}{1aff9cafa5e20edeaf5189b1a7c3a626}
+      \strng{authornamehash}{1aff9cafa5e20edeaf5189b1a7c3a626}
+      \strng{authorfullhash}{1aff9cafa5e20edeaf5189b1a7c3a626}
+      \strng{authorfullhashraw}{1aff9cafa5e20edeaf5189b1a7c3a626}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Most of the thermodynamic analysis of ovens are focused on efficiency, but they need to behaves under real-life conditions, then the effectiveness of the ovens plays a crucial role in their design. In this paper we present a thermodynamical model able to describe the temperature evolution in ovens, furnaces or kilns to harden, burn or dry different products and which provides a methodology to design these heating devices. We use the required temperature evolution for each product and process as main ingredient in the methodology and procedure to design ovens and we place in the right role the efficiency criteria. We use global energy balance equation for the oven under transient situation as the thermodynamic starting point for developing the model. Our approach is able to consider different configurations for these heating devices, or recirculating or open situations, etc.}
+      \field{note}{Version Number: 1}
+      \field{title}{One temperature model for effective ovens}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.48550/ARXIV.1109.0664
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1109.0664
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1109.0664
+      \endverb
+      \keyw{{FOS}: Physical sciences,Classical Physics (physics.class-ph),Popular Physics (physics.pop-ph)}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,69 @@
+\section{Cálculo de Densidades Cristalográficas}
+
+En cristalografía, cuantificamos la eficiencia del empaquetamiento atómico
+mediante tres tipos de densidades.
+
+\subsection{Densidad Teórica (Volumétrica)}
+
+La densidad teórica ($\rho$) es la masa por unidad de volumen de la celda
+unitaria. Es una propiedad macroscópica fundamental derivada de la
+microestructura.
+
+La fórmula general es:
+$$ \rho = \frac{n \cdot A}{V_C \cdot N_A} $$
+Donde:
+\begin{itemize}
+	\item $n$: Número de átomos (o unidades fórmula) por celda unitaria.
+	\item $A$: Masa atómica (o peso fórmula) $[\unit{\gram\per\mol}]$.
+	\item $V_C$: Volumen de la celda unitaria $[\unit{\centi\metre^3}]$.
+	\item $N_A$: Número de Avogadro ($6.022 \times 10^{23}$ átomos/mol).
+\end{itemize}
+
+\subsubsection{Ejemplo: Hierro $\alpha$-Fe (Estructura BCC)}
+\begin{itemize}
+	\item $n$: 2 átomos/celda (1 en el centro + 8 vértices $\times$ 1/8).
+	\item $A$: $\approx 55.845$ g/mol.
+	\item $V_C$: $a^3$. En la estructura BCC, la diagonal del cubo es $4R = \sqrt{3}a$, donde $R$ es el radio atómico. Por lo tanto, $a = \frac{4R}{\sqrt{3}}$.
+	\item El volumen es $V_C = \left(\frac{4R}{\sqrt{3}}\right)^3 = \frac{64R^3}{3\sqrt{3}}$.
+\end{itemize}
+Sustituyendo, la densidad depende fundamentalmente del radio atómico y la masa:
+$$ \rho_{BCC} = \frac{2 \cdot A}{\left(\frac{64R^3}{3\sqrt{3}}\right) \cdot N_A} = \frac{3\sqrt{3} \cdot A}{32 R^3 N_A} $$
+
+\subsection{Densidad Lineal (DL)}
+
+La densidad lineal (DL) mide la fracción de la longitud de una dirección cristalográfica específica que está ocupada por átomos. Es crucial para entender la deformación plástica (dislocaciones) y las propiedades de transporte.
+
+$$ DL = \frac{\text{Número de átomos centrados en el vector de dirección}}{\text{Longitud del vector de dirección}} $$
+
+\subsubsection{Ejemplo: Estructura FCC - Dirección [110]}
+\begin{itemize}
+	\item El vector [110] va de $(0,0,0)$ a $(a,a,0)$.
+	\item Atraviesa: 1/2 átomo en $(0,0,0)$, 1 átomo completo en $(a/2, a/2, 0)$ (centro de la cara), y 1/2 átomo en $(a,a,0)$.
+	\item Total de átomos en el vector: $1/2 + 1 + 1/2 = 2$ átomos.
+	\item Longitud del vector: $L = \sqrt{a^2 + a^2 + 0^2} = a\sqrt{2}$.
+\end{itemize}
+$$ DL_{[110]} = \frac{2}{a\sqrt{2}} $$
+En FCC, la diagonal de la cara es $4R = a\sqrt{2}$. Sustituyendo:
+$$ DL_{[110]} = \frac{2}{4R} = \frac{1}{2R} $$
+
+\subsection{Densidad Planar (DP)}
+
+La densidad planar (DP) mide la fracción del área de un plano cristalográfico que está ocupada por átomos. Los planos con mayor DP son los planos de deslizamiento preferenciales.
+
+$$ DP = \frac{\text{Número de átomos centrados en el plano (dentro de la celda)}}{\text{Área del plano (dentro de la celda)}} $$
+
+\subsubsection{Ejemplo: Estructura FCC - Plano (111)}
+Este es el plano de empaquetamiento compacto en FCC.
+\begin{itemize}
+	\item El plano corta los ejes en $(a,0,0)$, $(0,a,0)$ y $(0,0,a)$. Forma un triángulo equilátero.
+	\item Área del plano ($A_p$): Es un triángulo de lado $L = a\sqrt{2}$ (la diagonal de una cara). $A_p = \frac{1}{2} \cdot \text{base} \cdot \text{altura} = \frac{1}{2} (a\sqrt{2}) (a\sqrt{2} \sin(60^\circ)) = \frac{a^2 \sqrt{3}}{2}$.
+	\item Átomos en el plano: 3 átomos en los vértices (cada uno compartido por 2D, contribuye 1/2? No, miremos el área 2D).
+	\item Es más simple: 3 vértices (cada uno contribuye 1/6 del área del hexágono 2D) y 3 centros de cara (cada uno contribuye 1/2). 
+	\item Aternativa más robusta: 3 átomos en los vértices (e.g., (a,0,0), (0,a,0), (0,0,a)) y 3 átomos en centros de cara (e.g., (a/2, a/2, 0), (a/2, 0, a/2), (0, a/2, a/2)).
+	\item Dentro del triángulo $A_p$: Hay 3 $\times$ (1/2 átomo en las caras) + 3 $\times$ (1/6 átomo en los vértices). (Considerando el área de un átomo como $\pi R^2$).
+	\item Método estándar: Contar átomos centrados en el plano. Vértices: 3 $\times$ 1/6 (contribución al triángulo) + Centros de cara: 3 $\times$ 1/2. Total $1/2 + 3/2 = 2$ átomos.
+\end{itemize}
+$$ DP_{(111)} = \frac{2 \text{ átomos}}{A_p} = \frac{2}{a^2 \sqrt{3} / 2} = \frac{4}{a^2 \sqrt{3}} $$
+Sustituyendo $a = 2\sqrt{2}R$ (de $a\sqrt{2}=4R$):
+$$ DP_{(111)} = \frac{4}{(2\sqrt{2}R)^2 \sqrt{3}} = \frac{4}{8R^2 \sqrt{3}} = \frac{1}{2\sqrt{3}R^2} $$
+Este es el máximo empaquetamiento 2D posible (aprox. 0.907).

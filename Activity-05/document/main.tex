@@ -1,0 +1,91 @@
+\documentclass[
+  11pt,
+  a4paper,
+  numbers=noenddot
+]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage[sorting=nyt]{biblatex}
+
+\addbibresource{./references.bib}
+
+\usepackage[
+  a4paper,
+  left=2.5cm,
+  right=2.5cm,
+  top=3cm,
+  bottom=3cm
+]{geometry}
+\usepackage{microtype}
+\usepackage{xcolor}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{amsthm}
+\usepackage{siunitx}
+\usepackage{derivative}
+\usepackage{braket}
+\usepackage[version=4]{mhchem}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{listings}
+
+\usepackage{enumitem}
+\usepackage[title]{appendix}
+
+\usepackage{hyperref}
+\usepackage[spanish]{cleveref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=blue,
+  urlcolor=blue,
+  pdftitle={Actividad 05: Estructura Atómica y Enlaces},
+  pdfauthor={Julian Avila},
+  pdfsubject={Material Science},
+  pdfkeywords={Ashby},
+  bookmarksopen=true,
+  bookmarksnumbered=true
+}
+\urlstyle{same}
+
+\sisetup{
+  group-digits=true,
+  group-separator={\,},
+  separate-uncertainty
+}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{proposition}[theorem]{Proposición}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}[section]
+\newtheorem{problem}{Problema}[section]
+\newtheorem{example}{Ejemplo}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Observación}[section]
+
+\renewcommand{\arraystretch}{1.2}
+\raggedbottom
+
+\begin{document}
+
+\title{Actividad 05: Estructuras Cristalinas}
+\author{Julian Avila \\ \small\texttt{jlavilam@udistrital.edu.co}}
+\date{Universidad Distrital Francisco José de Caldas \\ \today}
+\maketitle
+
+\input{./sections/density.tex}
+
+\printbibliography
+\nocite{*}
+
+\end{document}

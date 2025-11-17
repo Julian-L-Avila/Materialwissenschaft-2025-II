@@ -1,0 +1,16 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'main.blg'
+[71] biber:342> INFO - === So Okt 12, 2025, 03:54:19
+[84] Biber.pm:421> INFO - Reading 'main.bcf'
+[156] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[168] Biber.pm:4487> INFO - Processing section 0
+[176] Biber.pm:4678> INFO - Looking for bibtex file './references.bib' for section 0
+[177] bibtex.pm:1713> INFO - LaTeX decoding ...
+[197] bibtex.pm:1519> INFO - Found BibTeX data source './references.bib'
+[320] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[321] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[321] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'es-ES'
+[336] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[342] bbl.pm:779> INFO - Output to main.bbl
+[342] Biber.pm:132> WARN - ISBN '978-0-470-61798-4 978-0-470-94995-5' in entry 'marder_condensed_2010' is invalid - run biber with '--validate_datamodel' for details.
+[342] Biber.pm:134> INFO - WARNINGS: 1

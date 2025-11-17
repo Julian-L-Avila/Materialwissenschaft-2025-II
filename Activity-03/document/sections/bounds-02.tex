@@ -1,0 +1,144 @@
+\section{Actividad 02 -- Enlaces Atómicos}
+
+\begin{problem}[Números Cuánticos y Propiedades Físicas]
+  ¿Cómo los números cuánticos,
+  gobiernan las propiedades físicas de un material?
+\end{problem}
+
+Las partículas elementales son excitaciones de campos cuánticos
+fundamentales, clasificadas por su espín. El Teorema Espín-Estadística
+establece una correspondencia fundamental: partículas de espín
+semientero (e.g., electrones, espín $\frac{\hbar}{2}$) son fermiones, descritos
+por una función de onda total $\Psi$ que debe ser antisimétrica bajo el
+intercambio de las coordenadas (espaciales y de espín) de dos
+partículas idénticas:
+$ \Psi(x_1, x_2, \dots) = - \Psi(x_2, x_1, \dots) $.
+Esta exigencia de antisimetría orquesta, desde el nivel más elemental,
+la vasta diversidad de propiedades de los materiales.
+
+La antisimetría de $\Psi$ implica directamente el Principio de Exclusión
+de Pauli. El espacio de estados de un sistema de dos fermiones no es el
+producto tensorial completo $\mathcal{H} \otimes \mathcal{H}$ del
+espacio de Hilbert de una partícula, sino su subespacio
+antisimétrico, $\Lambda^2(\mathcal{H})$. Un estado de dos partículas
+$\ket{\alpha}$ y $\ket{\beta}$ se representa por su producto exterior:
+$$ \ket{\Psi} = \ket{\alpha} \wedge \ket{\beta} \equiv \frac{1}{\sqrt{2}}
+(\ket{\alpha} \otimes \ket{\beta} - \ket{\beta} \otimes \ket{\alpha}) $$
+Por la propiedad antisimétrica del producto exterior ($a \wedge b = -b
+\wedge a$), si intentamos colocar ambos fermiones en el mismo estado
+cuántico $\ket{\alpha}$, el estado del sistema es necesariamente el
+vector nulo:
+$$ \ket{\alpha} \wedge \ket{\alpha} = 0 $$
+Un estado nulo tiene probabilidad cero de existir. Esta restricción
+prohíbe la ``condensación'' de fermiones en un mismo estado, forzándolos
+a apilarse en una jerarquía de estados energéticos.
+
+Al formar un sólido, los orbitales atómicos discretos se solapan, y
+según modelos como el de ``tight-binding'', sus niveles de energía se
+hibridan en cuasi-continuos energéticos: las bandas de
+energía. Los electrones, obedeciendo la estadística de Fermi-Dirac,
+llenan estas bandas hasta una energía máxima a $T= \qty{0}{\kelvin}$, la
+energía de Fermi ($E_F$). La topología de estas bandas cerca
+de $E_F$ define las propiedades electrónicas del material.
+\begin{itemize}
+  \item \textbf{Aislantes/Semiconductores:} $E_F$ se sitúa dentro de
+    una brecha energética (\emph{band gap}, $E_g$) que separa una banda
+    de valencia llena de una banda de conducción vacía. Se requiere una
+    energía $\geq E_g$ para excitar un electrón y permitir la
+    conducción.
+  \item \textbf{Metales:} $E_F$ cruza una o más bandas, resultando en
+    una banda parcialmente llena. Esto garantiza una densidad de
+    estados finita en la energía de Fermi, $g(E_F) > 0$, permitiendo la
+    excitación de electrones a estados vacíos con una energía
+    infinitesimal y, por ende, una alta conductividad eléctrica.
+\end{itemize}
+
+El magnetismo surge de la interacción de intercambio, un efecto
+sin análogo clásico, fruto de la interacción entre la repulsión de
+Coulomb y el principio de antisimetría. La antisimetría impone una
+correlación entre las coordenadas espaciales y de espín de los
+electrones. Con la minimización de su energía de repulsión electrostática, los
+electrones pueden adoptar una configuración espacial que los separe, lo
+cual, satisfaciendo el teorema, puede forzar a sus espines a
+alinearse. Este fenómeno se modela con un término en el Hamiltoniano
+efectivo, $ H_{\text{ex}} = -2J \mathbf{S}_i \cdot \mathbf{S}_j $, donde
+$J$ es la integral de intercambio. Si $J>0$, se favorece el
+ferromagnetismo (espines paralelos).
+
+Así, propiedades macroscópicas como la conductividad, la transparencia
+o el magnetismo son manifestaciones directas de la naturaleza
+fermiónica del electrón y la simetría fundamental de su función de onda.
+
+\begin{problem}[Familias de la tabla periódica]
+  Ubique las familias de elementos en la tabla periódica y describa
+  su utilidad.
+  \begin{figure}[htbp!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{./images/Periodic_table_large.pdf}
+    \caption{Tabla Periódica. \cite{commons_fileperiodic_2025}}
+    \label{fig:periodic-table}
+  \end{figure}
+\end{problem}
+
+\subsection{Metales Alcalinos y Alcalinotérreos}
+
+\paragraph{Ubicación.} Grupos 1 y 2, el bloque $s$ de la tabla periódica.
+
+Configuración de valencia $ns^1$ y $ns^2$. El apantallamiento eficaz del núcleo
+por las capas internas y su gran radio atómico resulta en las energías de
+ionización más bajas de todos los elementos. Esto los convierte en agentes
+reductores extremadamente potentes y químicamente muy reactivos. Su enlace
+metálico es relativamente débil, al contribuir con solo uno o dos electrones al
+``mar'' de Fermi, lo que explica su baja densidad y blandura.
+
+\subsection{Metales de Transición}
+
+\paragraph{Ubicación.} Grupos 3 al 12, el bloque $d$.
+
+Caracterizados por el llenado de los orbitales $(n-1)d$. La pequeña diferencia
+de energía entre los niveles $ns$ y $(n-1)d$ permite múltiples estados de
+oxidación, propiedad que los convierte en excelentes catalizadores. En presencia
+de un campo ligando, la degeneración de los orbitales $d$ se rompe. Las
+transiciones electrónicas $d$-$d$ entre estos niveles absorben fotones en el
+espectro visible, generando compuestos coloreados. El llenado de orbitales $d$,
+a menudo deja electrones desapareados. La interacción de intercambio entre estos
+espines puede alinear sus momentos magnéticos, dando lugar al ferromagnetismo
+(\ce{Fe}, \ce{Co}, \ce{Ni}).
+
+\subsection{Lantánidos y Actínidos}
+
+\paragraph{Ubicación.} Bloque $f$, las dos filas inferiores.
+
+Se caracterizan por el llenado de los orbitales $4f$ (lantánidos) y $5f$
+(actínidos). Los orbitales $4f$ están espacialmente contraídos y apantallados
+por las capas externas ($5s^2$, $5p^6$), por lo que participan poco en el enlace
+químico. Esto provoca que todos los lantánidos tengan propiedades químicas muy
+similares. Su configuración $f$ les confiere propiedades magnéticas y ópticas
+únicas.  Los actínidos son todos radiactivos debido a la inestabilidad nuclear
+de sus isótopos.
+
+\subsection{Metaloides y No Metales}
+
+\paragraph{Ubicación.} Región derecha de la tabla, separados por una
+línea diagonal.
+
+Los metaloides (\ce{Si}, \ce{Ge}) son semiconductores. Su estructura de bandas
+presenta una brecha energética ($E_g$) pequeña, lo que permite controlar su
+conductividad mediante dopaje (introducción de impurezas) para crear portadores
+de carga (electrones o huecos). Los no metales (\ce{C}, \ce{N}, \ce{O}, \ce{S})
+tienen altas energías de ionización y afinidades electrónicas; forman enlaces
+covalentes fuertes y direccionales. El Carbono (\ce{C}) es excepcional por su
+capacidad de hibridación ($sp, sp^2, sp^3$), base de la química orgánica y de
+alótropos como el diamante y el grafeno.
+
+\subsection{Halógenos y Gases Nobles}
+
+\paragraph{Ubicación.} Grupos 17 y 18, extremo derecho de la tabla.
+
+\textbf{Halógenos:} Configuración de valencia $ns^2np^5$. Les falta un electrón
+para alcanzar una capa llena, lo que se traduce en una afinidad electrónica muy
+alta. Son los elementos más electronegativos y reactivos.
+
+\textbf{Gases Nobles:} Configuración $ns^2np^6$. Esta capa de valencia cerrada
+es una configuración de mínima energía, lo que les confiere una excepcional
+estabilidad e inercia química.

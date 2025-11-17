@@ -1,0 +1,125 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  filecolor=black,
+  urlcolor=blue,
+}
+
+\title{
+  Un Reporte Resumen: \\ Intercalación de \ce{AlF3} en Grafito:
+  Mecanismos de Sorción Estudiados por AES y DFT
+}
+\author{Julian L. Avila-Martinez}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\vspace{0.5cm}
+
+\begin{abstract}
+  \noindent Este reporte resume una investigación combinada, experimental y
+  computacional, sobre la intercalación de fluoruro de aluminio (\ce{AlF3}) en
+  un sustrato de grafito. Las técnicas principales empleadas fueron la
+  \textbf{Espectroscopía de Electrones Auger (AES)} para el análisis de
+  superficie experimental y la \textbf{Teoría del Funcional de la Densidad
+  (DFT)} para el modelado computacional. Un hallazgo principal fue la excelente
+  concordancia entre los datos experimentales y las predicciones teóricas, las
+  cuales indican que la intercalación de \ce{AlF3} en el grafito es un proceso
+  energéticamente favorable.
+\end{abstract}
+
+
+\section*{Justificación y Motivación}
+
+La investigación está motivada por la necesidad apremiante de encontrar
+alternativas a las baterías de ion-litio. Aunque el litio es el estándar de la
+tecnología actual de baterías recargables, su limitada abundancia
+terrestre presenta un desafío a largo plazo. El aluminio es una alternativa muy
+atractiva debido a su gran abundancia. Además, su catión trivalente,
+\ce{Al^{3+}}, ofrece una alta capacidad de carga, y el fluoruro de aluminio,
+\ce{AlF3}, es un compuesto químicamente estable adecuado para aplicaciones
+electroquímicas. Este estudio, por lo tanto, explora la viabilidad fundamental
+de un sistema aluminio-grafito, un primer paso crucial hacia el desarrollo de
+nuevas baterías recargables de ion-aluminio.
+
+\section*{Investigación Experimental}
+
+El enfoque experimental se centró en el uso de la Espectroscopía de Electrones
+Auger (AES), una técnica altamente sensible a la composición elemental de la
+región cercana a la superficie de un material. Esta sensibilidad es primordial,
+ya que las propiedades de la superficie (i.e., número de coordinación, energía
+superficial, reactividad) difieren fundamentalmente de las del material en
+volumen (bulk). Se hizo una distinción clave entre la \textbf{adsorción} (la
+acumulación de átomos o moléculas en la superficie de un material) y la
+\textbf{absorción} (la difusión de partículas hacia el interior del volumen).
+La intercalación es un tipo específico de absorción donde moléculas o iones
+huéspedes se insertan en la estructura laminar de un material anfitrión.
+
+Se utilizó AES para verificar que estaba ocurriendo una intercalación, en lugar
+de una mera adsorción superficial. El efecto Auger es un proceso mecano-cuántico
+de tres pasos:
+\begin{enumerate}
+  \item \textbf{Ionización}: Una partícula de alta energía (e.g. un electrón
+    del cañón de electrones) colisiona con un electrón de un nivel interno
+    (e.g., en la capa K) de un átomo del sustrato, expulsándolo y creando un
+    hueco en dicho nivel.
+  \item \textbf{Relajación}: Un electrón de un nivel de energía superior (e.g.
+    la capa L\(_1\)) decae para llenar el hueco del nivel internob
+  \item \textbf{Emisión Auger}: La energía liberada durante el proceso de
+    relajación se transfiere de forma no radiativa a otro electrón (e.g. en
+    la capa L\(_2\)), que es entonces emitido del átomo. Esta partícula emitida
+    es el \textbf{electrón Auger}.
+\end{enumerate}
+La energía cinética del electrón Auger emitido es característica de la
+estructura electrónica del átomo de origen, lo que permite una identificación
+elemental precisa.
+
+Los experimentos se llevaron a cabo utilizando un espectrómetro PHI SAM 590A. Se
+sublimaron cristalitos de \ce{AlF3} y se depositaron molécula a molécula sobre un
+sustrato de Grafito Piroloítico Altamente Orientado (HOPG). Se utilizó una placa
+de cobre como referencia para la calibración del flujo molecular, ya que su
+estructura cúbica centrada en las caras (FCC) no permite la intercalación. Para
+confirmar la intercalación, se aplicó la \textbf{ley de Beer-Lambert} a los
+datos de AES. A medida que el \ce{AlF3} se intercala con éxito, forma capas debajo
+de la superficie del grafito, causando una atenuación exponencial de la señal
+Auger del carbono que proviene del sustrato. Las observaciones experimentales
+revelaron una dependencia crítica de la tasa de deposición: un \textbf{flujo
+molecular bajo} resultó en una intercalación exitosa, lo cual se atribuye a que
+se concede tiempo suficiente para que las moléculas de \ce{AlF3} se difundan por
+la superficie y encuentren sitios energéticamente favorables para penetrar en la
+red del grafito. Por el contrario, un \textbf{flujo molecular alto} condujo
+predominantemente a la adsorción, donde las moléculas se agregaron en la
+superficie del grafito en lugar de entrar en la estructura interna.
+
+\section*{Modelado Computacional}
+
+Los resultados experimentales fueron corroborados por simulaciones de primeros
+principios basadas en DFT. Para modelar la dinámica del proceso de
+intercalación, se implementó el método de la \textbf{Banda Elástica Empujada
+(NEB, por sus siglas en inglés)}. El método NEB es un potente algoritmo
+utilizado para determinar el \textbf{camino de mínima energía (MEP)} para una
+transición entre un estado inicial y uno final; en este caso, una molécula de
+\ce{AlF3} en la superficie del grafito y la misma molécula intercalada entre los
+planos de grafeno. Las simulaciones identificaron con éxito una ruta viable y de
+baja energía para la intercalación. De manera crucial, los cálculos de la
+energética de la reacción revelaron que el proceso global es
+\textbf{exotérmico}. Este resultado teórico proporciona una fuerte evidencia de
+que la intercalación de \ce{AlF3} en el grafito es un proceso termodinámicamente
+espontáneo y favorable, respaldando plenamente las conclusiones experimentales.
+
+\end{document}

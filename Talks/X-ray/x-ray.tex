@@ -1,0 +1,167 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  filecolor=black,
+  urlcolor=blue,
+}
+
+\title{
+  \textbf{Resumen: Difracción de Rayos X}
+}
+\author{Julian L. Avila-Martinez}
+\date{26 de Septiembre 2025}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+  \textbf{Ponente:} Cristian \\
+  \textbf{Afiliación:} Universidad Nacional de Colombia
+\end{center}
+
+\section{Introducción}
+
+Este informe resume los conceptos esenciales presentados en la charla de
+Cristian sobre los fundamentos y aplicaciones prácticas de la difracción de
+rayos X (DRX). El enfoque se centra en el papel crítico del polimorfismo en la
+industria farmacéutica y en los fundamentos físico-técnicos de la técnica de
+DRX. La DRX es una herramienta indispensable para el estudio de la simetría y el
+orden en la materia condensada, cuya correcta aplicación exige una profunda
+comprensión de sus principios.
+
+\section{El Fenómeno del Polimorfismo}
+
+\textbf{Definición:} El polimorfismo es la capacidad de un material sólido de
+existir en múltiples estructuras cristalinas distintas, conocidas como
+polimorfos. Aunque son químicamente idénticos, los polimorfos presentan
+diferentes arreglos en la red cristalina y/o conformaciones moleculares. Esto
+conduce a diferentes energías de red y, en consecuencia, a diferentes energías
+libres de Gibbs ($G = U + PV - TS$). El polimorfo termodinámicamente más estable
+a una temperatura y presión dadas es aquel con la menor energía libre de Gibbs.
+Las formas metaestables pueden persistir debido a altas barreras cinéticas para
+la transformación.
+
+\subsection*{Impacto en la Farmacología}
+Las propiedades fisicoquímicas, en particular la velocidad de disolución, pueden
+diferir drásticamente entre polimorfos, lo que tiene consecuencias
+significativas en la biodisponibilidad y seguridad de los medicamentos.
+
+\begin{itemize}
+  \item \textbf{Paracetamol (Acetaminofén):} Este fármaco existe en dos formas
+    principales. La Forma I (estable) tiene un tiempo de disolución de
+    aproximadamente 8 horas, mientras que la Forma II (metaestable) se disuelve
+    en solo 2 horas. La administración involuntaria de la forma incorrecta
+    podría conducir a una sobredosis rápida y a una potencial toxicidad.
+  \item \textbf{Rifaximina:} Este antibiótico existe en 12 formas de hidratos,
+    de las cuales solo una, la forma delta, es terapéuticamente activa y está
+    aprobada por la FDA. Las otras formas son insolubles e ineficaces.
+\end{itemize}
+Técnicas como la cromatografía son incapaces de detectar estas diferencias, ya
+que requieren la destrucción de la estructura cristalina. Esto subraya la
+importancia de la DRX como herramienta esencial de control de calidad.
+
+\section{Principios Físicos de la Difracción de Rayos X}
+
+La DRX es una técnica no destructiva que aprovecha la interferencia constructiva
+de rayos X monocromáticos dispersados por los electrones en una red cristalina.
+
+\subsection*{Ley de Bragg y Espacio Recíproco}
+La condición para la interferencia constructiva se describe mediante la Ley de
+Bragg:
+$$ n\lambda = 2d_{hkl} \sin\theta $$
+Donde $n$ es un número entero, $\lambda$ es la longitud de onda de los rayos X,
+$d_{hkl}$ es el espaciado interplanar para una familia de planos de red con
+índices de Miller $(hkl)$, y $\theta$ es el ángulo de dispersión.
+
+Desde una perspectiva más fundamental del espacio recíproco, los picos de
+difracción ocurren cuando el vector de dispersión $\Delta\vec{k} =
+\vec{k}_{\text{final}} - \vec{k}_{\text{inicial}}$ coincide con un vector de la
+red recíproca $\vec{G}_{hkl}$. Para la dispersión elástica,
+$|\vec{k}_{\text{final}}| = |\vec{k}_{\text{inicial}}| = 2\pi/\lambda$. Esta
+condición geométrica es la base de la Ley de Bragg y se visualiza elegantemente
+mediante la construcción de la \textbf{Esfera de Ewald}. Se observa un pico de
+difracción precisamente cuando un punto de la red recíproca $\vec{G}_{hkl}$ yace
+sobre la superficie de la Esfera de Ewald.
+
+\section{Configuración Experimental (Geometría Bragg-Brentano)}
+
+El difractómetro consta de tres componentes principales: una fuente de rayos X,
+un goniómetro con portamuestras y un detector.
+\begin{enumerate}
+  \item \textbf{Generación de Rayos X:} Los electrones, emitidos por un
+    filamento caliente (emisión termoiónica), se aceleran hacia un blanco
+    metálico (p. ej., Cu). Esto produce un espectro continuo
+    (\textit{Bremsstrahlung}) y rayos X \textbf{característicos} discretos,
+    específicos del elemento. La radiación $K_\alpha$ (transición $L \to K$) se
+    utiliza para los experimentos de difracción.
+  \item \textbf{Filtrado:} Para obtener una fuente monocromática, se filtra la
+    radiación $K_\beta$ (transición $M \to K$). Para una fuente de cobre, se
+    utiliza un \textbf{filtro de Níquel}, ya que el borde de absorción K del
+    níquel se encuentra energéticamente entre las líneas de emisión $K_\alpha$ y
+    $K_\beta$ del cobre.
+  \item \textbf{Geometría y Detección:} En la geometría Bragg-Brentano
+    ($\theta-2\theta$), la fuente de rayos X y el detector giran de forma
+    sincronizada. Esto equivale a la rotación de la red recíproca en relación
+    con la Esfera de Ewald. El detector mide la intensidad en función del ángulo
+    $2\theta$.
+\end{enumerate}
+
+\subsection*{Preparación de la Muestra}
+Para la difracción de polvo, la muestra debe estar finamente molida para
+asegurar una orientación aleatoria de los cristalitos, y prensada de forma plana
+en el portamuestras para minimizar errores geométricos. Una altura de muestra
+incorrecta conduce a desplazamientos y ensanchamiento de los picos.
+
+\section{Interpretación de Datos de DRX}
+
+El difractograma resultante es una ``huella dactilar'' inequívoca de la fase
+cristalina.
+\begin{itemize}
+  \item \textbf{Materiales Cristalinos:} Muestran \textbf{picos de Bragg} agudos
+    y bien definidos a ángulos $2\theta$ específicos, que corresponden a los
+    espaciados de la red ($d_{hkl}$).
+  \item \textbf{Materiales Amorfos:} Carecen de orden de largo alcance. Generan
+    una señal ancha y difusa, conocida como \textbf{halo amorfo}, en lugar de
+    picos agudos. La posición del halo puede proporcionar información sobre la
+    distancia promedio al vecino más cercano.
+\end{itemize}
+
+\section{Dispersión Anómala de Rayos X}
+
+El factor de dispersión atómica $f$ describe la capacidad de dispersión de un
+átomo y es una cantidad compleja:
+$$ f(\vec{q}, E) = f_0(\vec{q}) + f'(E) + i f''(E) $$
+Donde $f_0$ es el término de dispersión de Thomson, y $f', f''$ son las
+correcciones de dispersión anómala. Estos términos se vuelven significativos
+cuando la energía de los rayos X incidentes $E$ se sintoniza cerca de un borde
+de absorción de un elemento. La dispersión anómala de rayos X a bajo ángulo
+(ASAXS) aprovecha esta dependencia de la energía para aislar matemáticamente la
+contribución a la dispersión de un elemento específico mediante mediciones a
+varias energías justo por debajo de su borde de absorción, obteniendo así
+información estructural específica del elemento.
+
+\section*{Conclusión}
+
+La presentación trato la relevancia fundamental de la DRX en la
+ciencia de materiales moderna y, en particular, para el control de calidad en la
+industria farmacéutica. La capacidad de la técnica para distinguir entre
+polimorfos la convierte en una herramienta indispensable para garantizar la
+seguridad y eficacia de los medicamentos.
+
+\end{document}

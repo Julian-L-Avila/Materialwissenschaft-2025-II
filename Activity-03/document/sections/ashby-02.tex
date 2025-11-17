@@ -1,0 +1,322 @@
+\section{Actividad 02 -- Diagramas de Ashby}
+
+\begin{problem}[Física de los Hornos]
+	Explicar el principio físico de un horno de fundición (ferrería),
+	reverbero, horno Bessemer, horno de arco, inducción, inducción al
+	vacío y horno de tratamiento térmico para la metalurgia.
+\end{problem}
+
+\subsection{Alto Horno}
+
+El alto horno es un reactor químico diseñado para la reducción
+carbotérmica de minerales de hierro. Su principio operativo se
+fundamenta en una gestión rigurosa del flujo de materia y energía
+en contracorriente. Una carga sólida (mineral, coque, fundente)
+desciende por gravedad, mientras que gases calientes ascienden desde la
+base.
+
+La generación de energía térmica es iniciada por la combustión de coque
+con aire precalentado ($T > \qty{1200}{\kelvin}$), inyectado por toberas:
+\ce{C + O2 -> CO2}. Esta reacción eleva la
+temperatura por encima de \qty{2000}{\kelvin}. El \ce{CO2} reacciona
+inmediatamente con carbono incandescente en la reacción endotérmica de
+Boudouard, \ce{C + CO2 <=> 2CO},
+generando el principal agente reductor, el monóxido de carbono.
+
+Desde una perspectiva termodinámica, el proceso es viable porque la
+energía libre de Gibbs ($ \Delta G $) para la oxidación del carbono
+se vuelve más negativa que la de los óxidos de hierro a altas
+temperaturas. La reducción del hierro ocurre secuencialmente a medida que la
+carga desciende a zonas de mayor temperatura:
+$ \ce{3Fe2O3 -> 2Fe3O4 -> FeO -> Fe} $.
+
+El transporte de calor es un proceso complejo que involucra convección
+forzada, donde el número de Péclet es elevado, y radiación térmica
+desde las zonas incandescentes hacia la carga porosa.
+
+\subsection{Horno de Reverbero}
+
+A diferencia del alto horno, este diseño aísla la carga del
+combustible para evitar su contaminación. El principio físico
+fundamental es la maximización de la transferencia de calor por
+radiación. Una llama y gases calientes fluyen a lo largo de un techo
+refractario abovedado, que se calienta hasta la incandescencia.
+
+Este techo actúa como un cuerpo radiante secundario, emitiendo energía
+hacia la carga metálica situada en la solera. El flujo de calor
+radiante ($q$) se rige por la ley de Stefan-Boltzmann,
+$ q = \sigma \epsilon F_{1-2} (T_1^4 - T_2^4) $, donde $T_1$ es la
+temperatura del techo, $T_2$ la de la carga, $\epsilon$ la emisividad y
+$F_{1-2}$ es el factor de forma (o de visión), un término geométrico
+que cuantifica la fracción de energía que intercepta la carga. La
+geometría del horno es, por tanto, un parámetro de diseño crítico.
+
+\subsection{Convertidor Bessemer}
+
+La física del convertidor Bessemer es la de un reactor químico
+autógeno, cuya energía proviene de reacciones de oxidación exotérmicas
+\emph{in situ}. No requiere fuente de calor externa. Se inyecta aire u
+oxígeno a presión a través del arrabio fundido, induciendo la oxidación
+selectiva de impurezas.
+
+La termodinámica dicta la secuencia de oxidación: elementos con mayor
+afinidad por el oxígeno, como el silicio
+(\ce{Si + O2 -> SiO2}) y el manganeso
+(\ce{2Mn + O2 -> 2MnO}), reaccionan primero,
+formando una escoria. Finalmente, se oxida el carbono,
+\ce{2C + O2 -> 2CO}, cuya violenta formación
+gaseosa provoca una ebullición característica.
+
+Desde la fluidodinámica, la inyección del gas genera una turbulencia
+extrema y un área interfacial gas-líquido inmensa, lo que resulta en
+una cinética de transferencia de masa extraordinariamente rápida,
+completando el afino del acero en minutos.
+
+\subsection{Horno de Arco Eléctrico}
+
+Su principio físico es la generación de un arco voltaico de alta
+potencia entre electrodos de grafito y la carga metálica. El arco es un
+plasma, un gas ionizado estable cuyas temperaturas pueden exceder los
+\qty{6000}{\kelvin}.
+
+La transferencia de energía al metal es un proceso multifísico:
+\begin{enumerate}
+	\item \textbf{Radiación térmica:} Es el mecanismo dominante. La
+		columna de plasma irradia energía intensamente según la ley de
+		Stefan-Boltzmann.
+	\item \textbf{Transferencia en los electrodos:} Bombardeo directo de
+		electrones e iones en los puntos de anclaje del arco con el baño
+		metálico.
+	\item \textbf{Convección:} Transferencia de calor desde el plasma
+		caliente al metal.
+\end{enumerate}
+La potencia eléctrica disipada, $ P = V_{\text{arc}} I_{\text{arc}} $, se
+controla con precisión para optimizar la fusión de la chatarra.
+
+\subsection{Calentamiento por Inducción}
+
+Este horno opera bajo los principios del electromagnetismo. Una
+corriente alterna ($ I(t) $) fluye por una bobina que envuelve un
+crisol con la carga metálica. Por la ley de Ampère, esta corriente
+genera un campo magnético variable en el tiempo, $ B(t) $.
+
+La ley de Faraday, $ \nabla \wedge E = - \pdv{B}!{t} $,\footnote{Se emplea uso del
+formalismo del álgebra de Clifford $\mathcal{C}\ell_{3} (\mathbb{R})$, donde $E$
+es un vector y $B$ un bivector.} dicta que $B(t)$ induce
+un campo eléctrico $E$. Este campo impulsa la circulación de corrientes
+parásitas (Eddy currents), $J = \sigma_e E$.
+
+El calentamiento se produce por efecto Joule, con una densidad de
+potencia volumétrica dada por $ p = J \cdot E = J^2 \sigma^{-1}_e $. Un
+fenómeno clave es el efecto piel (\emph{skin effect}), que confina a
+$J$ a una capa superficial de profundidad
+$ \delta = \sqrt{2 \rho_e (\omega \mu)^{-1}} $, donde $\rho_e$ es la
+resistividad, $\omega$ la frecuencia angular y $\mu$ la permeabilidad
+magnética.
+
+Adicionalmente, la interacción del campo $B$ con las corrientes $J$
+genera una fuerza de Lorentz ($ F = J \cdot B $), que induce un
+flujo de agitación (stirring) en el metal líquido, garantizando una
+homogeneización térmica y química superior.
+
+\subsection{Inducción al Vacío (VIM)}
+
+El horno VIM acopla la física de la inducción con los principios de la
+termodinámica en baja presión. Al operar en vacío, la presión parcial
+de gases ($p_i$) sobre el metal se reduce drásticamente.
+
+Según la ley de Sieverts, la solubilidad de gases diatómicos como
+\ce{N2}, \ce{O2} y \ce{H2} en el metal es proporcional a $\sqrt{p_i}$.
+Una disminución de $p_i$ reduce el potencial químico del gas en la
+atmósfera, impulsando su desorción del metal fundido para alcanzar un
+nuevo equilibrio.
+
+El vacío también facilita la eliminación de elementos volátiles con
+alta presión de vapor y desplaza equilibrios de desoxidación como
+\ce{[C] + [O] <=> CO_{(g)}}.
+La extracción continua del producto gaseoso CO, conforme al principio
+de Le Châtelier, lleva la reacción a completarse.
+
+\subsection{Tratamiento Térmico: Física del Estado Sólido}
+
+Estos hornos manipulan la microestructura del material en estado
+sólido. El principio físico subyacente es la cinética de las
+transformaciones de fase, controlada por ciclos térmicos precisos.
+
+El calentamiento de una pieza se rige por la ecuación de difusión del
+calor, $ \pdv{T}!{t} = \alpha \nabla^2 T $, donde $\alpha$ es la
+difusividad térmica. El objetivo es llevar el material a una región de
+su diagrama de fases donde una nueva estructura cristalina sea estable
+(e.g., austenización del acero).
+
+La etapa crítica es el enfriamiento. La velocidad, $ \mdif{t}{T} $,
+determina la transformación de fase resultante.
+\begin{itemize}
+	\item \textbf{Enfriamiento lento:} Permite transformaciones por
+		difusión (nucleación y crecimiento), formando microestructuras
+		como ferrita, perlita o bainita.
+	\item \textbf{Enfriamiento rápido (temple):} Suprime la difusión. La
+		transformación ocurre de forma displaciva (sin difusión), mediante
+		un mecanismo de cizallamiento de la red cristalina, dando lugar a
+		fases metaestables como la martensita.
+\end{itemize}
+
+\begin{problem}[Diagrama de Ashby]
+	Interprete el diagrama de Ashby presentado en la \cref{fig:ashby-3}.
+	\begin{figure}[htbp!]
+		\centering
+		\includegraphics[width=0.5\linewidth]{./images/ashby.png}
+		\caption{Diagrama de Ashby (Módulo de Young y Densidad).}
+		\label{fig:ashby-3}
+	\end{figure}
+\end{problem}
+
+\subsubsection{Eje Y: Módulo de Young, \texorpdfstring{$E$ (\si{\giga\pascal})}{E (GPa)}}
+
+Esta propiedad cuantifica la rigidez de un material en el régimen
+elástico. Se define como la constante de proporcionalidad entre el
+esfuerzo uniaxial ($\sigma$) y la deformación unitaria ($\epsilon$)
+según la Ley de Hooke, $\sigma = E \epsilon$.
+
+El módulo de Young está determinado por la naturaleza de los enlaces interatómicos.
+Es proporcional a la curvatura del potencial de energía interatómica $U(r)$ en
+la distancia de equilibrio $r_0$:
+$$ E \propto \left( \mdif{r}^2 U \right)_{r=r_0} $$
+Un valor de $E$ elevado implica enlaces fuertes y una gran resistencia a
+la deformación elástica. El rango logarítmico del eje abarca siete
+órdenes de magnitud, evidenciando la vasta diversidad de materiales.
+
+\subsubsection{Eje X: Densidad, \texorpdfstring{$\rho$
+(\si{\mega\gram\per\cubic\meter})}{rho (Mg/m3)}}
+
+La densidad es la masa por unidad de volumen. Microscópicamente, está
+determinada por tres factores:
+\begin{enumerate}
+	\item La masa atómica ($A$) de los elementos constituyentes.
+	\item El factor de empaquetamiento atómico (APF), una propiedad
+		geométrica de la estructura cristalina o molecular.
+	\item La porosidad presente en el material.
+\end{enumerate}
+
+\subsection{Interpretación de las Familias de Materiales}
+
+Las regiones en el diagrama agrupan materiales con características
+físicas y estructurales similares.
+
+\subsubsection{Metales (Gris)}
+
+Se ubican en la región superior derecha: alta rigidez y alta densidad.
+Su enlace metálico, caracterizado por un gas de electrones
+deslocalizados, proporciona una fuerte cohesión no direccional. Esto,
+sumado a sus estructuras cristalinas compactas (e.g., FCC, BCC con APF
+elevados), resulta en módulos de Young altos y densidades notables.
+
+\subsubsection{Cerámicas Técnicas (Rojo)}
+
+Ocupan la cúspide del diagrama, exhibiendo la máxima rigidez. Sus
+enlaces, predominantemente iónicos (fuertes, no direccionales) y/o
+covalentes (muy fuertes y direccionales), exigen una energía muy alta
+para deformarse. Su densidad es moderada, menor que la de muchos
+metales, pues suelen componerse de átomos más ligeros (\ce{O}, \ce{Si}, \ce{Al},
+\ce{C}).
+
+\subsubsection{Polímeros y Elastómeros (Azul)}
+
+Se localizan en la región central e inferior, con baja rigidez y
+densidad. Su comportamiento mecánico no está dominado por el
+estiramiento de enlaces primarios, sino por interacciones secundarias
+(fuerzas de van der Waals) y por la rotación de enlaces en las largas
+cadenas moleculares. En los elastómeros, la rigidez es particularmente
+baja y su origen es fundamentalmente entrópico: la fuerza restauradora
+proviene de la tendencia del sistema a maximizar su entropía
+conformacional (retorno al estado de ovillo estadístico).
+
+\subsubsection{Compuestos (Amarillo)}
+
+Estos materiales de ingeniería se posicionan estratégicamente para
+optimizar la relación rigidez-peso. Combinan una matriz (usualmente
+polimérica, de baja densidad) con un refuerzo de alta rigidez (e.g.,
+fibras de carbono, vidrio). Su objetivo es maximizar el módulo
+específico, $E \rho^{-1}$, un índice de rendimiento clave. Por ello, se
+ubican en la deseable región superior izquierda del diagrama.
+
+\subsubsection{Materiales Naturales (Marrón)}
+
+Exhiben una gran diversidad, a menudo como compuestos jerárquicos
+optimizados por la evolución. La madera, un compuesto celular de fibras
+de celulosa en una matriz de lignina, logra una excelente rigidez
+específica.
+
+\subsubsection{Espumas (Verde)}
+
+Ocupan la esquina inferior izquierda: densidad y rigidez extremadamente
+bajas. Son estructuras celulares con una alta fracción de volumen de
+gas. Su respuesta mecánica no está dictada por las propiedades del
+material base, sino por la arquitectura de la espuma. La deformación se
+produce por la flexión y el pandeo de las paredes celulares.
+
+\begin{problem}[Material para una taza]
+	Para fabricar una taza, ¿qué se debe tener en cuenta en la selección
+	del material desde una perspectiva de la física de materiales?
+\end{problem}
+
+La selección de un material para una taza es un problema de diseño que
+requiere satisfacer un conjunto de restricciones termofísicas,
+mecánicas y químicas.
+
+\subsubsection{Restricciones Termofísicas}
+
+\paragraph{Resistencia al Choque Térmico.} El material debe soportar
+gradientes de temperatura abruptos sin fracturarse. Al
+verter un líquido caliente, la superficie interna se expande
+repentinamente, generando un esfuerzo de tracción en la superficie
+externa (más fría).
+
+\paragraph{Aislamiento Térmico.} Para mantener la bebida caliente y el
+exterior a una temperatura manejable, se requiere una baja
+conductividad térmica, $k$. A nivel microscópico, esto implica una baja
+eficiencia en la propagación de fonones (cuantos de vibración de la
+red). Materiales con estructuras cristalinas complejas, desorden
+atómico (vidrios) o grandes diferencias de masa atómica favorecen la
+dispersión de fonones y, por tanto, poseen un bajo valor de $k$.
+
+\subsubsection{Restricciones Mecánicas}
+
+\paragraph{Rigidez y Resistencia a la Compresión.} El material debe ser
+suficientemente rígido ($E$ elevado) y resistente a la compresión para
+soportar su propio peso y el del líquido sin deformarse. Las cerámicas
+y vidrios, con sus fuertes enlaces iónicos/covalentes, cumplen
+excelentemente este requisito.
+
+\paragraph{Fragilidad y Tenacidad a la Fractura.} La contrapartida de
+los enlaces cerámicos es su fragilidad. La estructura atómica inhibe el
+deslizamiento de dislocaciones, impidiendo la deformación plástica como
+mecanismo de disipación de energía. Por tanto, la energía de un
+impacto se invierte en la propagación de grietas. La propiedad que
+cuantifica esta resistencia es la tenacidad a la fractura, $K_{\text{Ic}}$.
+Las cerámicas tienen valores de $K_{\text{Ic}}$ muy bajos en comparación con
+los metales, lo que las hace susceptibles a la fractura catastrófica
+ante un defecto o impacto.
+
+\paragraph{Dureza Superficial.} Se requiere una alta dureza para resistir
+la abrasión y el rayado por el uso de utensilios (e.g., cucharas) y
+durante la limpieza. La dureza está directamente relacionada con la
+fuerza de los enlaces interatómicos, por lo que las cerámicas son
+ideales en este aspecto.
+
+\subsubsection{Restricciones Químicas y de Biocompatibilidad}
+
+\paragraph{Inercia Química.} El material debe ser químicamente inerte. No
+debe reaccionar, corroerse ni degradarse en contacto con bebidas que
+pueden ser ácidas (café, pH $\approx 5$) o alcalinas. La elevada
+energía de los enlaces en óxidos cerámicos (e.g., $\ce{SiO2}$,
+$\ce{Al2O3}$) les confiere una estabilidad termodinámica excepcional en
+estos entornos.
+
+\paragraph{Biocompatibilidad.} El material debe ser apto para el contacto
+con alimentos. Esto significa que no debe haber lixiviación (leaching)
+de especies iónicas tóxicas hacia la bebida. En el caso de cerámicas
+esmaltadas, es crucial que el vidriado se haya procesado a una
+temperatura adecuada para garantizar la completa vitrificación y evitar
+la liberación de metales pesados (e.g., \ce{Pb}, \ce{Cd}) que pudieran estar
+presentes en los pigmentos.

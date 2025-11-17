@@ -1,0 +1,123 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  filecolor=black,
+  urlcolor=blue,
+}
+
+\title{
+  \textbf{Resumen: Materiales Cuánticos para una Inteligencia Artificial Sostenible}
+}
+\author{Julian L. Avila-Martinez}
+\date{19 de Septiembre 2025}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+  \textbf{Ponente:} Paula Giraldo-Gallo \\
+  \textbf{Afiliación:} Grupo de Materiales Cuánticos, Universidad de los Andes
+\end{center}
+
+\vspace{0.5cm}
+
+\section*{El Desafío: Almacenamiento de Datos Insostenible}
+
+El crecimiento exponencial de los datos, actualmente estimado en más de
+$10^{23}$~bytes, presenta un desafío de sostenibilidad significativo. Estos
+datos se almacenan físicamente en centros de datos que colectivamente ocupan un
+área comparable a la de un país pequeño y consumen aproximadamente el 1\% de la
+energía total del mundo. La tecnología central, la memoria ferromagnética,
+depende de la inducción de corrientes eléctricas para escribir y leer datos.
+Este proceso es fundamentalmente ineficiente debido a dos factores principales:
+\begin{itemize}
+  \item \textbf{Ineficiencia Energética:} Se disipa una cantidad significativa
+    de energía en forma de calentamiento por efecto Joule, lo que requiere
+    sistemas de refrigeración masivos que a su vez consumen enormes recursos (e.
+    g. un estimado de 2 litros de agua por cada imagen generada por IA).
+  \item \textbf{Límites Físicos de Escalabilidad:} Los bits ferromagnéticos no
+    pueden reducirse por debajo de aproximadamente 16~\si{\nano\metre} sin volverse
+    térmicamente inestables debido al efecto superparamagnético, lo que
+    provoca la pérdida de datos. Esto impone un límite estricto a la densidad de
+    almacenamiento.
+\end{itemize}
+
+\section*{La Solución: Materiales Cuánticos Multiferroicos}
+
+La charla propone un cambio de paradigma desde los materiales clásicos hacia los
+materiales cuánticos, aquellos cuyas propiedades están dominadas por
+fenómenos de la mecánica cuántica y no pueden ser descritos por aproximaciones
+clásicas. Dentro de esta clase, los materiales multiferroicos ofrecen
+una solución directa a la crisis energética del almacenamiento de datos.
+
+A diferencia de los ferromagnetos convencionales que requieren una corriente
+eléctrica para cambiar los estados magnéticos, los multiferroicos exhiben un
+acoplamiento entre sus parámetros de orden magnético y eléctrico. Esto permite
+que la polarización magnética (el bit de datos) sea controlada por un
+campo eléctrico aplicado (una diferencia de potencial) en lugar de una
+corriente. Este cambio en el mecanismo puede reducir la energía necesaria para
+escribir datos en aproximadamente cuatro órdenes de magnitud.
+
+\section*{Un Novedoso Material Multiferroico 2D a Temperatura Ambiente}
+
+Para abordar tanto el consumo de energía como la densidad espacial, el grupo ha
+desarrollado un novedoso material multiferroico 2D basado en un
+Dicalcogenuro de Metal de Transición (TMD). Los TMDs tienen una fórmula
+química general de \ce{MX2}, donde M es un metal de transición y X es un
+calcógeno. Se caracterizan por fuertes enlaces covalentes dentro de un plano 2D
+y débiles fuerzas de van der Waals entre planos, lo que permite su exfoliación
+en capas individuales.
+
+El material específico desarrollado es una aleación compleja con la fórmula
+\ce{W(Se_{1-x}Te_x)_{2-\delta}}:
+\begin{itemize}
+  \item \textbf{M (Metal de Transición):} Wolframio (W)
+  \item \textbf{X (Calcógeno):} Selenio (Se)
+  \item \textbf{Dopante:} Telurio (Te) se sustituye por Selenio para ajustar las
+    propiedades del material.
+  \item \textbf{Defecto:} Se introduce intencionadamente una vacancia ($\delta$)
+    en los sitios del calcógeno.
+\end{itemize}
+El material exhibe varias propiedades clave diseñadas:
+\begin{itemize}
+  \item \textbf{Ferromagnetismo por Vacancias:} La introducción de vacancias de
+    selenio ($\delta$) es el principal impulsor para inducir ferromagnetismo en
+    el material. Una mayor concentración de vacancias resulta en una respuesta
+    ferromagnética más fuerte.
+  \item \textbf{Piezoelectricidad Sintonizable:} El material también es
+    piezoeléctrico. La magnitud de la respuesta piezoeléctrica se correlaciona
+    directamente con la concentración de Telurio (x), lo que permite ajustar
+    esta propiedad.
+\end{itemize}
+
+\section*{Conclusión y Relevancia}
+
+La investigación culmina en la creación de lo que se reporta como el
+primer material multiferroico 2D que es funcional a temperatura
+ambiente. Esto representa un avance significativo, ya que los multiferroicos 2D
+anteriores solo eran estables a temperaturas criogénicas, lo que los hacía
+imprácticos para aplicaciones de consumo o en centros de datos. El desarrollo de
+una memoria magnética controlada por voltaje a temperatura ambiente en un
+formato 2D aborda directamente los desafíos críticos del consumo de energía y la
+densidad de almacenamiento. Con una patente en trámite, este material podría
+allanar el camino para una nueva generación de dispositivos lógicos y de memoria
+de ultra alta densidad y bajo consumo, esenciales para el escalado sostenible de
+la inteligencia artificial.
+
+\end{document}

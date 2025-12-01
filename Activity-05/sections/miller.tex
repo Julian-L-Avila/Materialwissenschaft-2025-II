@@ -1,0 +1,64 @@
+\section{Convenciones de Notación en Índices de Miller}
+
+La notación de los índices de Miller, $(hkl)$, está sujeta a
+convenciones estrictas que son cruciales para su correcta
+interpretación.
+
+\subsection{Planos Equivalentes por Inversión}
+Un plano cristalográfico se define por sus interceptos;
+los índices $(hkl)$ representan una familia de planos paralelos
+infinitos. Por convención, un conjunto de índices y su negativo
+directo, $(-h, -k, -l)$, se consideran físicamente equivalentes.
+
+Consideremos los índices $(012)$ y $(0\bar{1}\bar{2})$, donde la
+barra superior denota un valor negativo (e.g., $-1$).
+El plano $(012)$ intercepta los ejes en $(\infty, b, c/2)$.
+El plano $(0\bar{1}\bar{2})$ intercepta los ejes en
+$(\infty, -b, -c/2)$.
+
+Estos dos planos son paralelos y están separados por la misma
+distancia $d_{hkl}$. Geométricamente, describen el mismo conjunto
+de planos en el cristal, aunque sus vectores normales apunten en
+direcciones opuestas. En el contexto de la difracción, dado que
+la Ley de Bragg depende de $d_{hkl}$, ambos planos son
+indistinguibles y se consideran idénticos. Pertenecen a la misma
+familia de planos $\{012\}$.
+
+\subsection{Múltiplos de Índices y Órdenes de Difracción}
+Una situación conceptualmente diferente surge con los índices que
+son múltiplos enteros, como $(123)$ y $(246)$.
+
+Por definición geométrica, los índices de Miller $(hkl)$ deben
+ser el conjunto de enteros más pequeños que mantienen la misma
+proporción (es decir, deben ser coprimos). El plano $(123)$
+intercepta los ejes en $(a, b/2, c/3)$.
+La notación $(246)$ es, por esta definición, inválida, ya que
+puede reducirse a $(123)$ al dividir por un factor común de 2.
+Representaría un plano con interceptos $(a/2, b/4, c/6)$, que
+es un plano paralelo a $(123)$ pero con un espaciado diferente.
+
+Sin embargo, la notación $(nh, nk, nl)$, como $(246)$,
+adquiere un significado físico fundamental en el contexto de la
+difracción de rayos X. Se utiliza universalmente como una
+taquigrafía para referirse a los órdenes de difracción
+superiores ($n > 1$) de la Ley de Bragg ($n\lambda = 2d_{hkl} \sin\theta$).
+
+El pico $(123)$ corresponde al primer orden ($n=1$) de
+difracción de los planos $(123)$. El pico $(246)$ se refiere
+específicamente al segundo orden ($n=2$) de difracción de
+esos mismos planos $(123)$.
+
+Esta notación es matemáticamente consistente. El espaciado
+para un plano ficticio $(246)$ sería $d_{246} = d_{123} / 2$.
+Al sustituir esto en la Ley de Bragg para $n=1$, se obtiene:
+$$ 1 \lambda = 2 d_{246} \sin(\theta_{(246)})
+   = 2 \left(\frac{d_{123}}{2}\right) \sin(\theta_{(246)}) $$
+$$ \lambda = d_{123} \sin(\theta_{(246)}) $$
+Si comparamos esto con la condición de Bragg para el segundo
+orden de $(123)$:
+$$ 2 \lambda = 2 d_{123} \sin(\theta_{(123), n=2}) $$
+$$ \lambda = d_{123} \sin(\theta_{(123), n=2}) $$
+Vemos que $\theta_{(246)} = \theta_{(123), n=2}$. Por lo tanto,
+$(123)$ y $(246)$ no son iguales: representan el primer y
+segundo orden de difracción de la misma familia de planos,
+y aparecen como picos distintos en un difractograma.

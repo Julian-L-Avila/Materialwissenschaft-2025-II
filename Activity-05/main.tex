@@ -18,7 +18,7 @@
   left=2.5cm,
   right=2.5cm,
   top=3cm,
-  bottom=3cm
+  bottom=3cm,
 ]{geometry}
 \usepackage{microtype}
 \usepackage{xcolor}
@@ -47,7 +47,7 @@
   citecolor=blue,
   urlcolor=blue,
   pdftitle={Actividad 05: Estructura Atómica y Enlaces},
-  pdfauthor={Julian Avila},
+  pdfauthor={Julian L. Avila-Martinez},
   pdfsubject={Material Science},
   pdfkeywords={Ashby},
   bookmarksopen=true,
@@ -60,6 +60,8 @@
   group-separator={\,},
   separate-uncertainty
 }
+
+\AtBeginDocument{\decimalpoint}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Teorema}[section]
@@ -79,11 +81,23 @@
 \begin{document}
 
 \title{Actividad 05: Estructuras Cristalinas}
-\author{Julian Avila \\ \small\texttt{jlavilam@udistrital.edu.co}}
+\author{Julian L. Avila-Martinez \\ \small\texttt{jlavilam@udistrital.edu.co}}
 \date{Universidad Distrital Francisco José de Caldas \\ \today}
 \maketitle
 
+\input{./sections/structures.tex}
+
+\input{./sections/indices.tex}
+
 \input{./sections/density.tex}
+
+\input{./sections/polymorph.tex}
+
+\input{./sections/inter-plane.tex}
+
+\input{./sections/miller.tex}
+
+\input{./sections/importance.tex}
 
 \printbibliography
 \nocite{*}

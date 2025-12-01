@@ -1,11 +1,21 @@
 \documentclass[a4paper]{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[spanish]{babel}
+\usepackage[spanish,es-tabla]{babel}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{authblk}
 \usepackage[version=4]{mhchem}
 \usepackage[margin=2.5cm]{geometry}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{csquotes}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\usepackage{hyperref}
+\usepackage[spanish]{cleveref}
 
 \title{Reporte Resultados Preliminares de Clasificación de Material}
 \author{Julian L. Avila-Martinez}
@@ -18,146 +28,132 @@ Universidad Distrital Francisco José de Caldas}
 \maketitle
 
 \begin{abstract}
-	Este reporte detalla los hallazgos de la
-	caracterización inicial de un compuesto desconocido.
-	El material es un polvo cristalino, blanco e higroscópico.
-	No es ferromagnético y exhibe un bajo punto de fusión
-	sin carbonización, indicando que es una sal inorgánica.
-	Las pruebas de solubilidad revelaron una alta solubilidad
-	en agua desionizada pero insolubilidad en \ce{H2SO4} 0.1 M.
-	La espectroscopía de Fluorescencia de Rayos X (XRF)
-	confirmó la presencia de Plata (\ce{Ag}) como constituyente
-	primario. La insolubilidad en ácido se interpreta como una
-	reacción de precipitación inmediata (formando \ce{Ag2SO4}).
-	Estos hechos establecen que el desconocido es una sal de
-	plata inorgánica soluble en agua. El contra-anión
+	Este reporte detalla los hallazgos de la caracterización inicial de un
+	compuesto desconocido. El material es un polvo cristalino, blanco e
+	higroscópico. No es ferromagnético y exhibe un bajo punto de fusión sin
+	carbonización, indicando que es una sal inorgánica. Las pruebas de
+	solubilidad revelaron una alta solubilidad en agua desionizada pero
+	insolubilidad en \ce{H2SO4} 0.1 M. La espectroscopía de Fluorescencia de
+	Rayos X (XRF) confirmó la presencia de Plata (\ce{Ag}) como constituyente
+	primario. Adicionalmente, se observó una reacción fotoquímica o de
+	reducción al contacto con materia orgánica. Estos hechos establecen que el
+	desconocido es una sal de plata inorgánica soluble en agua. El contra-anión
 	específico aún está por determinarse.
 \end{abstract}
 
 \section{Introducción}
-La identificación de materiales desconocidos es una tarea
-fundamental en la ciencia de materiales. Este reporte
-describe la primera fase de análisis de una muestra
-desconocida, enfocándose en datos objetivos, cualitativos
-y semicuantitativos. El objetivo de esta fase inicial no
-es la identificación definitiva, sino restringir lógicamente
-la clase del material y definir una ruta clara para el
-subsecuente análisis cuantitativo.
+La identificación de materiales desconocidos es una tarea fundamental en la
+ciencia de materiales. Este reporte describe la primera fase de análisis de una
+muestra desconocida, enfocándose en datos objetivos, cualitativos y
+semicuantitativos. El objetivo de esta fase inicial no es la identificación
+definitiva, sino restringir lógicamente la clase del material y definir una
+ruta clara para el subsecuente análisis cuantitativo.
 
 \section{Metodología y Resultados Experimentales}
+
 \subsection{Análisis Físico y Morfológico}
-La muestra es un polvo microcristalino, fino y de color
-blanco. El material es marcadamente higroscópico,
-absorbiendo fácilmente la humedad atmosférica ambiental.
-Esta propiedad se observó al formarse aglomeraciones
-o ``grumos'' significativos en el contenedor de
-almacenamiento con el tiempo.
+La muestra es un polvo microcristalino, fino y de color blanco. El material es
+marcadamente higroscópico, absorbiendo fácilmente la humedad atmosférica
+ambiental. Esta propiedad se observó al formarse aglomeraciones o ``grumos''
+significativos en el contenedor de almacenamiento con el tiempo.
+
+Se observó una interacción reactiva notable al contacto incidental con la
+epidermis. Los granos de material adheridos a la piel experimentaron un
+oscurecimiento progresivo, dejando manchas oscuras persistentes. Este fenómeno
+es consistente con la reducción in situ de iones de plata a plata metálica
+elemental ($\ce{Ag^0}$), catalizada por la luz o agentes reductores orgánicos
+presentes en la piel.
 
 \subsection{Evaluación de Propiedades Físicas}
+
 \subsubsection{Susceptibilidad Magnética}
-Se realizó una prueba cualitativa usando un imán
-permanente de alta intensidad de neodimio (\ce{NdFeB}). El
-polvo no exhibió ninguna fuerza atractiva o repulsiva
-observable. Por lo tanto, el material se clasifica como
-no ferromagnético (es decir, diamagnético o débilmente
-paramagnético).
+Se realizó una prueba cualitativa usando un imán permanente de alta intensidad
+de neodimio (\ce{NdFeB}). El polvo no exhibió ninguna fuerza atractiva o
+repulsiva observable. Por lo tanto, el material se clasifica como no
+ferromagnético (es decir, diamagnético o débilmente paramagnético).
 
 \subsubsection{Comportamiento Térmico Cualitativo}
-Se calentó una pequeña cantidad de la muestra en una
-cuchara de laboratorio sobre la llama de un mechero
-Bunsen. El material se fundió rápidamente a una
-temperatura cualitativamente baja. El material fundido
-resultante fue translúcido y blanco en los bordes.
-
-De manera crucial, no se observó carbonización
-significativa, humo o residuo de carbón negro
-característico de la combustión de compuestos orgánicos.
-Este hallazgo indica fuertemente que el desconocido es
-una sal inorgánica.
+Se calentó una pequeña cantidad de la muestra en una cuchara de laboratorio
+sobre la llama de un mechero Bunsen. El material se fundió rápidamente a una
+temperatura cualitativamente baja. El material fundido resultante fue
+translúcido y blanco en los bordes. De manera crucial, no se observó
+carbonización significativa, humo o residuo de carbón negro característico de
+la combustión de compuestos orgánicos. Este hallazgo indica fuertemente que el
+desconocido es una sal inorgánica.
 
 \subsection{Perfil de Solubilidad}
-Se evaluó la solubilidad del material en dos solventes
-clave:
+Se evaluó la solubilidad del material en dos solventes clave:
 \begin{itemize}
-	\item \textbf{Agua Desionizada:} La sustancia es
-		altamente soluble en agua, disolviéndose
-		rápidamente a temperatura ambiente para
-		formar una solución clara e incolora.
-	\item \textbf{Ácido Sulfúrico 0.1 M (\ce{H2SO4}):}
-		Cuando se añadió a la solución de \ce{H2SO4}
-		0.1 M, el polvo no pareció disolverse y se
+	\item \textbf{Agua Desionizada:} La sustancia es altamente soluble en agua,
+		disolviéndose rápidamente a temperatura ambiente para formar una
+		solución clara e incolora.
+	\item \textbf{Ácido Sulfúrico 0.1 M (\ce{H2SO4}):} Cuando se añadió a la
+		solución de \ce{H2SO4} 0.1 M, el polvo no pareció disolverse y se
 		asentó en el fondo como un sólido blanco.
 \end{itemize}
 
-\subsection{Análisis Composicional}
-Se realizó un análisis elemental inicial no destructivo
-usando espectroscopía de Fluorescencia de Rayos X (XRF).
-El espectro XRF identificó claramente las líneas de
-emisión características de la Plata (\ce{Ag}). Esto
-proporciona una confirmación definitiva de que el
-desconocido es un compuesto a base de plata.
+\subsection{Análisis Composicional (XRF)}
+Se realizó un análisis elemental inicial no destructivo usando espectroscopía
+de Fluorescencia de Rayos X (XRF). El espectro resultante, presentado en la
+\cref{fig:xrf_spectrum}, identifica claramente las líneas de emisión
+características de la Plata (\ce{Ag}). Esto proporciona una confirmación
+definitiva de que el desconocido es un compuesto a base de plata.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{./images/xrf-spectrum.pdf}
+	\caption{Espectro de Fluorescencia de Rayos X (XRF) de la muestra
+		desconocida. Se observan picos prominentes correspondientes a las
+		transiciones electrónicas de la Plata (\ce{Ag}), confirmando su presencia
+	como el catión metálico principal.}
+	\label{fig:xrf_spectrum}
+\end{figure}
 
 \section{Análisis de Resultados}
-Los datos experimentales permiten una restricción lógica
-y directa de la identidad del desconocido.
+Los datos experimentales permiten una restricción lógica y directa de la
+identidad del desconocido.
+
 \begin{enumerate}
-	\item Los datos de XRF confirman un
-		compuesto de plata.
-	\item La prueba térmica (sin carbonización) lo
-		establece como una sal inorgánica.
-	\item La alta solubilidad en agua confirma que
-		es una sal de plata inorgánica
-		soluble en agua.
+	\item Los datos de XRF confirman un compuesto de plata.
+	\item La prueba térmica (sin carbonización) lo establece como una sal
+		inorgánica.
+	\item La alta solubilidad en agua confirma que es una sal de plata
+		inorgánica soluble en agua.
+	\item El oscurecimiento en contacto con la piel valida la presencia de
+		iones de plata reducibles.
 \end{enumerate}
 
-La observación de insolubilidad en \ce{H2SO4} 0.1 M es
-de importancia crítica. Este comportamiento está en
-aparente contradicción con su alta solubilidad en agua.
-No se trata de una simple insolubilidad física, sino
-del resultado esperado de una reacción de
-precipitación inmediata.
-
-A medida que la sal soluble en agua se disuelve, libera
-iones \ce{Ag+}, que reaccionan inmediatamente con los
-iones \ce{SO4^2-} del ácido para formar
-Sulfato de Plata (\ce{Ag2SO4}), una sal blanca e
-insoluble:
+La observación de insolubilidad en \ce{H2SO4} 0.1 M es de importancia crítica.
+Este comportamiento está en aparente contradicción con su alta solubilidad en
+agua. No se trata de una simple insolubilidad física, sino del resultado
+esperado de una reacción de precipitación inmediata. A medida que la sal
+soluble en agua se disuelve, libera iones \ce{Ag+}, que reaccionan
+inmediatamente con los iones \ce{SO4^2-} del ácido para formar Sulfato de Plata
+(\ce{Ag2SO4}), una sal blanca e insoluble:
 $$ \ce{2Ag+ (aq) + SO4^2- (aq) -> Ag2SO4 (s)} $$
-Este nuevo precipitado es visualmente indistinguible
-del polvo original, dando la apariencia de
-insolubilidad.
-
-Por lo tanto, la prueba ácida confirma exitosamente la
-presencia de iones \ce{Ag+} solubles. La tarea
-analítica central se reduce ahora a identificar el
-contra-anión desconocido del material.
+Este nuevo precipitado es visualmente indistinguible del polvo original, dando
+la apariencia de insolubilidad. Por lo tanto, la prueba ácida confirma
+exitosamente la presencia de iones \ce{Ag+} solubles. La tarea analítica
+central se reduce ahora a identificar el contra-anión desconocido del material.
 
 \section{Trabajo Futuro Propuesto}
-Para identificar definitivamente el compuesto, se debe
-caracterizar el anión desconocido. Se proponen los
-siguientes pasos analíticos:
+Para identificar definitivamente el compuesto, se debe caracterizar el anión
+desconocido. Se proponen los siguientes pasos analíticos:
 
 \begin{itemize}
-	\item \textbf{Difracción de Rayos X (XRD):} Este es
-		el objetivo principal. El análisis por XRD
-		del polvo original producirá un patrón de
-		difracción. La comparación de este patrón
-		con una referencia en la base de datos ICDD
-		proporcionará la identificación definitiva
-		de la fase cristalina de la sal completa.
-	\item \textbf{Espectroscopía Vibracional (FTIR/Raman):}
-		Se emplearán tanto la Espectroscopía Infrarroja
-		por Transformada de Fourier (FTIR) como la
-		espectroscopía Raman. Estas técnicas son
-		ideales para identificar aniones poliatómicos
-		(p.ej., \ce{NO3-}, \ce{ClO4-}, \ce{SO4^2-}, etc.)
-		por sus modos vibracionales únicos y
-		característicos.
-	\item \textbf{Pruebas Químicas Puntuales:} Como
-		método de cribado rápido y de bajo costo,
-		se pueden emplear pruebas químicas dirigidas
-		(p.ej., la prueba del anillo pardo para
-		nitrato) para detectar aniones comunes
+	\item \textbf{Difracción de Rayos X (XRD):} Este es el objetivo principal.
+		El análisis por XRD del polvo original producirá un patrón de
+		difracción. La comparación de este patrón con una referencia en la base
+		de datos ICDD proporcionará la identificación definitiva de la fase
+		cristalina de la sal completa.
+	\item \textbf{Espectroscopía Vibracional (FTIR/Raman):} Se emplearán tanto
+		la Espectroscopía Infrarroja por Transformada de Fourier (FTIR) como la
+		espectroscopía Raman. Estas técnicas son ideales para identificar
+		aniones poliatómicos (p.ej., \ce{NO3-}, \ce{ClO4-}, \ce{SO4^2-}, etc.)
+		por sus modos vibracionales únicos y característicos.
+	\item \textbf{Pruebas Químicas Puntuales:} Como método de cribado rápido y
+		de bajo costo, se pueden emplear pruebas químicas dirigidas (p.ej., la
+		prueba del anillo pardo para nitrato) para detectar aniones comunes
 		sospechosos.
 \end{itemize}
 

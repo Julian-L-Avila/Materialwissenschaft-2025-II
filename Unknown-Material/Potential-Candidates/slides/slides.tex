@@ -1,0 +1,284 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[sorting=nyt]{biblatex}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{derivative}
+\usepackage[version=4]{mhchem}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{overlay-beamer-styles}
+\usetikzlibrary{positioning, arrows.meta, backgrounds, patterns}
+
+\pgfplotsset{compat=1.18}
+
+\usetheme[numbering=counter, progressbar=frametitle, background=light]{metropolis}
+
+\usecolortheme{dove}
+\definecolor{primary}{RGB}{88, 24, 124}
+\definecolor{secondary}{RGB}{0, 168, 150}
+
+\setbeamercovered{transparent}
+\setbeamercolor{frametitle}{fg=white, bg=primary}
+\setbeamercolor{progress bar}{fg=secondary}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{title}{size=\LARGE, series=\bfseries}
+\setbeamercolor{alerted text}{fg=secondary}
+\setbeamercolor{block title}{fg=primary}
+\setbeamercolor{block body}{bg=white}
+
+\setstretch{1.1}
+
+\setmainfont{Fira Sans}
+\setmathfont{TeX Gyre Pagella Math}
+
+\title{Unknown Material Characterization}
+\subtitle{Preliminary Results and Potential Candidates}
+\date{\today}
+\author{Julian L. Avila-Martinez}
+\institute{Physics, Universidad Distrital Francisco José de Caldas \\
+jlavilam@udistrital.edu.co}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+	\setbeamertemplate{section in toc}[sections numbered]
+	\tableofcontents
+\end{frame}
+
+% --- Introduction ---
+\section{Introduction}
+\begin{frame}{Analysis Objective}
+	\begin{columns}
+		\begin{column}{0.6\textwidth}
+			The purpose of this preliminary phase is not immediate identification,
+			but the \textbf{logical restriction} of the search space.
+
+			\vspace{1em}
+			We aim to classify the material based on:
+			\begin{itemize}[<+->]
+				\item Physical Properties
+				\item Chemical Behavior
+				\item Spectroscopic Data (XRF)
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.4\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\node[circle, draw=mLightBrown, fill=mLightBrown!10, text width=2cm,
+					align=center, thick] {Unknown\\Sample};
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+% --- Physical Observations ---
+\section{Experimental Results}
+\begin{frame}{Physical and Morphological Evidence}
+	\begin{alertblock}{Key Observation: Dermal Reaction}
+		Upon accidental contact with skin, the grains leave persistent \textbf{dark/black spots}.
+		\begin{itemize}[<+->]
+			\item Indicates photoreduction of metal ions to elemental metal.
+		\end{itemize}
+	\end{alertblock}
+
+	\vspace{0.5em}
+
+	\begin{columns}[t]
+		\begin{column}{0.48\textwidth}
+			\textbf{Morphology}
+			\begin{itemize}[<+->]
+				\item White microcrystalline powder.
+				\item \emph{Markedly hygroscopic} (forms clumps).
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\textbf{Thermal Properties}
+			\begin{itemize}[<+->]
+				\item Low melting point.
+				\item \alert{No carbonization}.
+				\item \textbf{Conclusion:} Inorganic Compound.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+% --- NEW SLIDE: Photos of Dark Spots ---
+\begin{frame}{Visual Evidence: Dermal Reaction}
+	\centering
+	\textbf{Photoreduction of the sample on organic tissue}
+	\vspace{1em}
+
+	\begin{columns}
+		\begin{column}{0.48\textwidth}
+			\centering
+			\includegraphics[width=\linewidth, height=0.6\textheight,
+			keepaspectratio]{./images/sebastian-hand.jpg}
+			\vspace{0.5em}
+			{\footnotesize \emph{\\ Figure 1: Sebastian's Hand}}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\centering
+			\includegraphics[width=\linewidth, height=0.6\textheight,
+			keepaspectratio]{./images/adriano-finger.jpg}
+			\vspace{0.5em}
+			{\footnotesize \emph{ \\ Figure 2: Adriano's Finger}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+% --- The XRF Result ---
+\begin{frame}{The Elemental ``Fingerprint''}
+	X-Ray Fluorescence (XRF) spectroscopy provided the most conclusive data:
+
+	\vspace{1em}
+	\centering
+	\begin{tikzpicture}
+		\node[draw=mDarkTeal, fill=mDarkTeal, text=white, rounded corners, inner
+			sep=15pt, font=\Huge\bfseries] (ag) {Ag};
+		\node[right=of ag, align=left, font=\Large] {Primary
+			Constituent:\\\textbf{SILVER}};
+	\end{tikzpicture}
+
+	\pause
+	\vspace{1em}
+	\raggedright
+	\small This explains the skin stains: $\ce{Ag+ -> Ag^0}$ (Black metallic silver).
+\end{frame}
+
+\begin{frame}{XRF Spectrum Analysis}
+	\centering
+	\includegraphics[width=0.9\textwidth, height=0.75\textheight,
+	keepaspectratio]{./images/xrf-spectrum.pdf}
+
+	\vspace{0.5em}
+	{\small Spectrum confirming characteristic Silver (Ag) emission lines.}
+\end{frame}
+
+% --- The Solubility Paradox ---
+\begin{frame}{The Solubility Paradox}
+	Solubility results presented an apparent contradiction:
+
+	\vspace{1em}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\pause
+			\begin{block}{Deionized Water}
+				\centering
+				\textbf{High Solubility}\\
+				Clear, colorless solution.
+			\end{block}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\pause
+			\begin{block}{Sulfuric Acid (\ce{H2SO4})}
+				\centering
+				\alert{\textbf{``Insolubility''}}\\
+				Formation of a white solid.
+			\end{block}
+		\end{column}
+	\end{columns}
+
+	\vspace{1.5em}
+	\centering
+	\emph{How can it be soluble in water but insoluble in dilute acid?}
+\end{frame}
+
+% --- Solving the Puzzle ---
+\section{Analysis}
+\begin{frame}{Solving the Paradox}
+	It is not physical insolubility; it is a \textbf{Precipitation Reaction}.
+
+	\vspace{1em}
+	Upon dissolving, the sample releases $\ce{Ag+}$ ions, which encounter sulfate $\ce{SO4^2-}$ ions in the acid.
+
+	\vspace{1em}
+	\begin{center}
+		\large
+		$\ce{2Ag+ (aq) + \alert{SO4^2- (aq)} -> \alert{Ag2SO4 (s)} v}$
+	\end{center}
+
+	\vspace{1em}
+	\textbf{Conclusion:} The unknown is a water-soluble silver salt.
+\end{frame}
+
+% --- The 3 Candidates ---
+\section{Candidates}
+\begin{frame}[standout]
+	The 3 Main Candidates
+\end{frame}
+
+\begin{frame}{Candidate 1: Silver Nitrate (\ce{AgNO3})}
+	\textbf{Probability: High}
+
+	\begin{itemize}
+		\item[$\checkmark$] \textbf{Solubility:} Extremely high in water
+			(\qty{2560}{\gram\per\litre}).
+		\item[$\checkmark$] \textbf{Skin:} Causes characteristic black stains (chemical burn via reduction).
+		\item[$\checkmark$] \textbf{Thermal:} Low melting point (\qty{212}{\celsius}).
+		\item[$\checkmark$] \textbf{Chemical:} Reacts with \ce{H2SO4} to precipitate sulfate.
+	\end{itemize}
+
+	\footnotesize \emph{This is the most common soluble silver salt in laboratories.}
+\end{frame}
+
+\begin{frame}{Candidate 2: Silver Fluoride (\ce{AgF})}
+	\textbf{Probability: Medium}
+
+	\begin{itemize}
+		\item[$\checkmark$] \textbf{Hygroscopicity:} Matches perfectly (\ce{AgF} is deliquescent, absorbs water voraciously).
+		\item[$\checkmark$] \textbf{Solubility:} The only water-soluble silver halide.
+		\item[\texttimes] \textbf{Rarity:} Less common than nitrate.
+		\item[\texttimes] \textbf{Appearance:} Often has a yellowish tint (though can be pure white).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Candidate 3: Silver Perchlorate (\ce{AgClO4})}
+	\textbf{Probability: Low/Medium}
+
+	\begin{itemize}
+		\item[$\checkmark$] \textbf{Solubility:} Extreme solubility
+			(\qty{5570}{\gram\per\litre}), even higher than nitrate.
+		\item[$\checkmark$] \textbf{Inorganic:} Consistent with lack of carbonization.
+		\item[\texttimes] \textbf{Risk:} Potentially explosive under certain conditions (organic shock), requiring special handling not reported.
+	\end{itemize}
+\end{frame}
+
+% --- Next Steps ---
+\section{Future Work}
+\begin{frame}{Next Steps}
+	To distinguish between \ce{NO3-}, \ce{F-}, and \ce{ClO4-}:
+
+	\begin{enumerate}
+		\item \textbf{Brown Ring Test:} Specific confirmation for Nitrates.
+		\item \textbf{X-Ray Diffraction (XRD):} Definitive identification of the crystalline phase.
+		\item \textbf{Raman Spectroscopy:} Differentiation of anion vibrational modes.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[plain]
+	\centering
+	\vspace{1cm}
+	{\Huge \textbf{Thank you!}}\\[1cm]
+	{\large Questions or Comments?}
+\end{frame}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\end{document}

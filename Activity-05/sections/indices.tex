@@ -1,0 +1,122 @@
+\section{Determinación de Índices Cristalográficos Direccionales}
+
+La definición formal de una dirección cristalográfica $[uvw]$ se construye a
+partir del vector de desplazamiento relativo $\Delta r$ entre dos puntos
+nodales de la red, $P_{\text{inicial}}$ y $P_{\text{final}}$. El procedimiento
+algorítmico requiere la reducción de las componentes de este vector a su
+conjunto de enteros coprimos más pequeño, preservando la colinealidad.
+
+Sean las coordenadas generalizadas en la base de la red $\{e_i\}$. El vector
+se define como:
+\begin{equation}
+  r = (x_f - x_i)e_1 + (y_f - y_i)e_2 + (z_f - z_i)e_3.
+\end{equation}
+
+Procedemos al análisis de los tres casos propuestos:
+
+\subsection{Caso A: Eje Principal}
+\textbf{Datos:} $P_i = (0,0,0)$, $P_f = (1,0,0)$.
+
+El vector de desplazamiento es inmediato:
+\begin{equation}
+  r_A = (1-0)e_1 + (0-0)e_2 + (0-0)e_3 = e_1.
+\end{equation}
+Las componentes ya son enteras y mínimas. La dirección coincide con el eje
+fundamental de la celda.
+\begin{equation}
+  \text{Índices:} \quad [100]
+\end{equation}
+
+\subsection{Caso B: Diagonal Principal (Cúbica)}
+\textbf{Datos:} $P_i = (0,0,0)$, $P_f = (1,1,1)$.
+
+El vector resultante atraviesa el cuerpo de la celda desde el origen:
+\begin{equation}
+  r_B = (1-0)e_1 + (1-0)e_2 + (1-0)e_3 = e_1 + e_2 + e_3.
+\end{equation}
+Al ser las tres componentes la unidad, no requieren normalización.
+\begin{equation}
+  \text{Índices:} \quad [111]
+\end{equation}
+
+\subsection{Caso C: Vector Generalizado}
+\textbf{Datos:} $P_i = (1/2, 1, 0)$, $P_f = (0,0,1)$.
+
+Calculamos las componentes fraccionarias del desplazamiento:
+\begin{equation}
+  r_C = (0 - 1/2)e_1 + (0 - 1)e_2 + (1 - 0)e_3 = -\frac{1}{2}e_1 - e_2 + e_3.
+\end{equation}
+Para satisfacer la definición de índices de Miller (números enteros), aplicamos
+un factor de escala escalar $\lambda = 2$ para eliminar el denominador, una
+operación que es invariante respecto a la dirección del vector:
+\begin{equation}
+  2 \cdot r_C = -e_1 - 2e_2 + 2e_3.
+\end{equation}
+Adoptando la convención cristalográfica donde los componentes negativos se
+denotan con una barra superior ($\bar{u}$):
+\begin{equation}
+  \text{Índices:} \quad [\bar{1}\bar{2}2]
+\end{equation}
+
+\section{Determinación de Índices de Miller para Planos Cristalográficos}
+
+La notación de Miller $(hkl)$ especifica una familia de planos mediante un
+vector normal en el espacio recíproco. El procedimiento estándar invierte los
+interceptos axiales y normaliza a enteros coprimos. Formalmente, si los
+interceptos son $x_1 e_1, x_2 e_2, x_3 e_3$, los índices se derivan de la
+relación de proporcionalidad $h:k:l = x_1^{-1} : x_2^{-1} : x_3^{-1}$.
+
+\subsection{Plano A: El Plano Octaédrico}
+\textbf{Interceptos:} $(1, 0, 0), (0, 1, 0), (0, 0, 1)$.
+
+Los interceptos normalizados respecto a los parámetros de red son $\mathbf{x} =
+(1, 1, 1)$. Calculamos los recíprocos:
+\begin{equation}
+  \left( 1^{-1}, 1^{-1}, 1^{-1} \right) = (1, 1, 1).
+\end{equation}
+Al ser enteros unitarios, no requieren reducción.
+\begin{equation}
+  (hkl) = (111).
+\end{equation}
+Este plano representa la máxima densidad planar en sistemas FCC.
+
+\subsection{Plano B: Plano Prismático General}
+\textbf{Interceptos:} $(1, 0, 0), (0, 2, 0)$.
+
+La ausencia de un tercer intercepto explícito implica paralelismo con el eje
+$e_3$. Matemáticamente, el intercepto tiende al infinito asintótico:
+$\mathbf{x} = (1, 2, \infty)$.
+Tomando los inversos:
+\begin{equation}
+  \left( \frac{1}{1}, \frac{1}{2}, \lim_{\xi \to \infty}\frac{1}{\xi} \right)
+  = \left( 1, 0.5, 0 \right).
+\end{equation}
+Para recuperar la naturaleza diofántica de los índices, aplicamos el factor de
+escala mínimo $\lambda = 2$:
+\begin{equation}
+  (hkl) = 2 (1, 0.5, 0) = (210).
+\end{equation}
+
+\subsection{Plano C: Formulación Algebraica (Bivector)}
+\textbf{Definición:} El plano subyacente al bivector $B = e_3 \wedge e_1$.
+
+En lugar de buscar interceptos geométricos, utilizamos el álgebra de Clifford
+$\mathcal{C}\ell_{3}$. El bivector $B$ codifica intrínsecamente la orientación del
+subespacio plano. El vector normal $\mathbf{n}$ (asociado a los índices de
+Miller) es el dual de Hodge (o complemento ortogonal) del bivector en el
+espacio tridimensional euclidiano.
+
+Utilizando el pseudoescalar $I = e_1 \wedge e_2 \wedge e_3$, la relación de
+dualidad establece:
+\begin{equation}
+  \mathbf{n} \propto -I B = -(e_1 \wedge e_2 \wedge e_3)(e_3 \wedge e_1).
+\end{equation}
+Dada la anticonmutatividad del producto exterior y la normalización $e_i^2=1$:
+\begin{equation}
+  \mathbf{n} \propto e_2.
+\end{equation}
+El vector normal $e_2$ corresponde a los índices direccionales $[010]$. Por
+consiguiente, la familia de planos ortogonales a este vector se denota:
+\begin{equation}
+  (hkl) = (010).
+\end{equation}
